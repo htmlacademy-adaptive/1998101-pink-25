@@ -37,22 +37,24 @@
         <div class="intro__wrapper">
           <h2 class="visually-hidden">Скачать приложение Pink</h2>
           <p class="intro__slogan">Взгляните на жизнь иначе!</p>
-          <a class="button__download" href="#" type="button">
+          <a class="button intro__button" href="#" type="button">
             Скачать приложение
           </a>
-          <ul class="intro-downloads__list">
-            <li class="intro-downloads__item">
-              <a class="intro-downloads__link intro-downloads__link--app-store" href="#">Скачать для устройств Apple.</a>
+          <ul class="intro__list">
+            <li class="intro__item">
+              <a class="intro__link intro__link--app-store" href="#">Скачать для устройств Apple.</a>
             </li>
-            <li class="intro-downloads__item">
-              <a class="intro-downloads__link intro-downloads__link--play-market" href="#">Скачать для устройств Android.</a>
+            <li class="intro__item">
+              <a class="intro__link intro__link--play-market" href="#">Скачать для устройств Android.</a>
             </li>
-            <li class="intro-downloads__item">
-              <a class="intro-downloads__link intro-downloads__link--microsoft-store" href="#">Скачать для устройств Windows.</a>
+            <li class="intro__item">
+              <a class="intro__link intro__link--microsoft-store" href="#">Скачать для устройств Windows.</a>
             </li>
           </ul>
           <p>Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
-          <img class="header-link__content-picture" src="img/screen.jpg" width="320" height="286" alt="Образец работы приложения">
+          <div class="intro__image">
+            <img src="img/screen.jpg" width="320" height="286" alt="Образец работы приложения">
+          </div>
         </div>
       </section>
       <section class="advantages">
@@ -93,10 +95,10 @@
               </div>
             </blockquote>
           </div>
-          <button class="reviews__prev" type="button">
+          <button class="slider__prev" type="button">
             <span class="visually-hidden">Предыдущий отзыв</span>
           </button>
-          <button class="reviews__next" type="button">
+          <button class="slider__next" type="button">
             <span class="visually-hidden">Следующий отзыв</span>
           </button>
           <p class="reviews__toggles slider__toggles">
@@ -109,8 +111,8 @@
       <section class="price">
         <div class="price__wrapper">
           <h2 class="visually-hidden">Стоимость подписки</h2>
-          <table class="price-table">
-            <thead class="table">
+          <table class="table price__table">
+            <thead>
               <tr class="table__header-row">
                 <td class="table__header-cell"></td>
                 <td class="table__header-cell">База
@@ -172,7 +174,7 @@
         </div>
       </section>
       <section class="contacts">
-        <div class="contacts-wrapper">
+        <div class="contacts__wrapper">
           <h2 class="visually-hidden">Обратная связь</h2>
           <p class="contacts__title">Устали от серости мегаполиса?</p>
           <div class="contacts__phone">
@@ -192,11 +194,9 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <div class="main-footer__logo">
-          <a class="logo-link" href="index.html">
-            <span class="visually-hidden">логотип Пинк</span>
-          </a>
-        </div>
+        <a class="main-footer__logo" href="index.html">
+          <span class="visually-hidden">Логотип Пинк</span>
+        </a>
         <div class="main-footer__social social">
           <b class="social__title">Давайте дружить!</b>
           <ul class="social__list">
