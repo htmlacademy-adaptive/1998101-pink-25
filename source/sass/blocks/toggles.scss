@@ -1,0 +1,30 @@
+.toggles {
+  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+}
+
+.toggles__item {
+  @include button-reset;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: rgba(#283645, 0.3);
+  border: 3px solid $white;
+  transition: background-color $transition, border-color $transition;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(#283645, 0.75);
+  }
+}
+
+.toggles__item--active {
+  background-color: $white;
+  border-color: #283645;
+
+  &:hover {
+    background-color: $white;
+  }
+}

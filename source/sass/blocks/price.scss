@@ -1,0 +1,9 @@
+.price {
+  background-color: #f2f2f2;
+  clip-path: polygon(0% 3.5%, 100% 0%, 100% 100%, 0 100%);
+
+}
+
+.price__wrapper {
+  @include wrapper;
+}

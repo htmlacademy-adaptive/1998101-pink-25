@@ -1,0 +1,51 @@
+.intro__wrapper {
+  @include wrapper;
+  background-color: #1d2631;
+}
+
+.intro__slogan {
+  color: #ffffff;
+  margin: 0 20px 20px;
+  padding-top: 95px;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.intro__list {
+  @include list-reset;
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
+  justify-content: center;
+  gap: 35px;
+}
+
+.intro__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro__download-description {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  padding: 28px 20px 38px 20px;
+}
+
+.intro__button {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.intro__inner {
+  background-image: url("../../img/background-mobile.png");
+  background-repeat: no-repeat;
+  margin-top: -70px;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: 28px;
+}

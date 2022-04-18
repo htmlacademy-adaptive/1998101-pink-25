@@ -1,0 +1,74 @@
+.contacts__wrapper {
+  @include wrapper;
+}
+
+.contacts__title { //можно вынести в блок по бэму т.к. в блоке advantages есть точно такой же заголовок и на других страницах тоже
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  text-align: center;
+}
+
+.phone__title {
+  display: block;
+  margin: 0 117px 13px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: center;
+  color: #283645;
+}
+
+.contacts__phone-link {
+  display: block;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 33px;
+  text-align: center;
+  color: #d22856;
+  margin-bottom: 31px;
+  text-decoration: none;
+}
+
+.email__title {
+  display: block;
+  margin-bottom: 13px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: center;
+  color: #283645;
+}
+
+.contacts__email-link {
+  display: block;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 33px;
+  text-align: center;
+  color: #d22856;
+  margin-bottom: 31px;
+  text-decoration: none;
+}
+
+.adress__title {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: center;
+  margin-bottom: 31px;
+}
+
+.contacts__address-link {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 33px;
+  text-align: center;
+  color: #d22856;
+  margin-bottom: 41px;
+}
+
+.contacts__map {
+  margin-bottom: 40px;
+}

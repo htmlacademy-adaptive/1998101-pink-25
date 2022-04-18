@@ -1,0 +1,20 @@
+.main-header__wrapper {
+  @include wrapper;
+
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  z-index: 2;
+  padding-top: 21px;
+  padding-bottom: 21px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-color: rgba(#000000, 0.3);
+  }
+}

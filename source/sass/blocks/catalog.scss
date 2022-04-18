@@ -1,0 +1,106 @@
+.catalog__title-wrapper {
+  @include wrapper;
+  background-image: url("../../img/background-mobile.png");
+  background-repeat: no-repeat;
+  margin-top: -90px;
+  margin-bottom: 54px;
+}
+
+.catalog__wrapper {
+  @include wrapper;
+}
+
+.catalog__list {
+  @include list-reset;
+}
+
+.catalog__item {
+  margin-bottom: 20px;
+}
+
+.catalog__title {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 33px;
+  text-align: center;
+  padding-top: 102px;
+  padding-bottom: 84px;
+  color: $white;
+}
+
+.catalog__description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.catalog__user {
+  background-color: #f2f2f2;
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+/* .catalog__photo--panorama {
+  position: absolute;
+  width: 140px;
+  height: 36px;
+  left: 160px;
+  top: 421px;
+  background-color: #D22856;
+  margin: 0 -20px;
+} */
+
+.catalog__author {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 14px;
+}
+
+.catalog__date {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.catalog__message {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 23px;
+}
+
+.catalog__user-like {
+  padding-bottom: 26px;
+  margin-bottom: 20px;
+}
+
+.button-catalog__like {
+  margin: 0;
+  padding: 0;
+  margin-right: 18px;
+  border: none;
+}
+
+.button-catalog__like-text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #d22856;
+}
+
+.upload__description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  color: #283645;
+  margin-bottom: 52px;
+}
