@@ -1,0 +1,29 @@
+.table__header-cell {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  background-color: #283645;
+}
+
+.price__rate {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.table__option {
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.table__cell {
+  padding: 20px;
+}

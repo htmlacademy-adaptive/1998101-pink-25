@@ -1,0 +1,175 @@
+.form__wrapper {
+  /* @include wrapper; */
+}
+
+.form-header {
+  @include wrapper;
+  background-image: url("../../img/background-mobile.png");
+  background-repeat: no-repeat;
+  margin-top: -90px;
+  margin-bottom: 54px;
+}
+
+.form-header__title {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 33px;
+  text-align: center;
+  color: $white;
+  padding-top: 119px;
+  padding-bottom: 51px;
+}
+
+.form-header__wrapper {
+  @include wrapper;
+}
+
+.form-header__description {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.form-header__form-add {
+  display: none;
+}
+
+.form-name__wrapper {
+  @include wrapper;
+  margin-bottom: 44px;
+}
+
+.form-name__list {
+  @include list-reset;
+}
+
+.form__fieldset {
+  border: 0 none;
+}
+
+.form__lable {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: left;
+  color: #d22856;
+}
+
+.form-legend {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.form-achievements__wrapper {
+  @include wrapper;
+  background-color: #f2f2f2;
+  padding-top: 42px;
+  padding-bottom: 44px;
+}
+
+.form-achievements__list {
+  @include list-reset;
+}
+
+.form-achievements__legend {
+  margin-bottom: 40px;
+}
+
+.form-achievements__item:not(:last-child) {
+  margin-bottom: 47px;
+}
+
+.form__checkbox-text {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+  color: #283645;
+}
+
+.form-contacts__wrapper {
+  @include wrapper;
+  padding-top: 42px;
+  padding-bottom: 44px;
+}
+
+.form-contacts__list {
+  @include list-reset;
+}
+
+.form-platform__wrapper {
+  @include wrapper;
+  background-color: #f2f2f2;
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+
+.form-platform__list {
+  @include list-reset;
+}
+
+.form-platform__item:not(:last-child) {
+  margin-bottom: 38px;
+}
+
+.form-platform__legend {
+  margin-bottom: 40px;
+}
+
+.form-emotions__wrapper {
+  @include wrapper;
+  padding-top: 42px;
+  padding-bottom: 26px;
+}
+
+.form-emotions__legend {
+  margin-bottom: 22px;
+}
+
+.form__send {
+  @include wrapper;
+}
+
+.form__send-button {
+  width: 100%;
+  background-color: #2aab6d;
+  border: 2px solid #2aab6d;
+  border-radius: 1px;
+  margin-bottom: 46px;
+}
+
+.form__input {
+  width: 276px;
+  height: 59px;
+  border: 2px solid #e5e5e5;
+  border-radius: 1px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: #283645;
+  padding-left: 20px;
+}
+
+.form__text-field {
+  width: 276px;
+  height: 197px;
+  border: 2px solid #e5e5e5;
+  border-radius: 1px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  padding: 22px 0 22px 20px;
+}
+
+.form__send-required-fields {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 66px;
+}
