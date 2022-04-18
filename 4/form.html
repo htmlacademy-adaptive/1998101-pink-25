@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
+  <base href="https://htmlacademy-adaptive.github.io/1998101-pink-25/4/">
+</head>
+<body>
+  <header class="main-header">
+    <div class="main-header__wrapper">
+      <a class="main-header__logo" href="index.html">
+        <img src="img/logotype-mobile.svg" width="74" height="23" alt="Фотоприложение Pink">
+      </a>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+
+        <svg class="main-nav__toggle-icon" width="50" height="24" viewBox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.13659 0.00020839C0.986512 -0.00251551 0.837358 0.0214885 0.698091 0.0707781C0.558823 0.120068 0.432317 0.193625 0.326173 0.28703C0.22003 0.380436 0.136442 0.49176 0.0804303 0.614315C0.024419 0.73687 -0.00285856 0.868124 0.000236809 1.00019V3.00016C0.000236809 3.26537 0.119959 3.51972 0.333067 3.70725C0.546174 3.89478 0.83521 4.00014 1.13659 4.00014H48.8634C49.0135 4.00286 49.1626 3.97886 49.3019 3.92957C49.4412 3.88028 49.5677 3.80672 49.6738 3.71332C49.78 3.61991 49.8636 3.50859 49.9196 3.38603C49.9756 3.26348 50.0029 3.13222 49.9998 3.00016V1.00019C49.9998 0.734979 49.88 0.48063 49.6669 0.293097C49.4538 0.105563 49.1648 0.00020839 48.8634 0.00020839H1.13659ZM1.13659 10C0.986512 9.99731 0.837358 10.0213 0.698091 10.0706C0.558823 10.1199 0.432317 10.1935 0.326173 10.2869C0.22003 10.3803 0.136442 10.4916 0.0804303 10.6141C0.024419 10.7367 -0.00285856 10.868 0.000236809 11V13C0.000236809 13.2652 0.119959 13.5195 0.333067 13.7071C0.546174 13.8946 0.83521 14 1.13659 14H48.8634C49.0135 14.0027 49.1626 13.9787 49.3019 13.9294C49.4412 13.8801 49.5677 13.8065 49.6738 13.7131C49.78 13.6197 49.8636 13.5084 49.9196 13.3859C49.9756 13.2633 50.0029 13.132 49.9998 13V11C49.9998 10.7348 49.88 10.4805 49.6669 10.2929C49.4538 10.1054 49.1648 10 48.8634 10H1.13659ZM1.13659 19.9999C0.986512 19.9971 0.837358 20.0211 0.698091 20.0704C0.558823 20.1197 0.432317 20.1933 0.326173 20.2867C0.22003 20.3801 0.136442 20.4914 0.0804303 20.614C0.024419 20.7365 -0.00285856 20.8678 0.000236809 20.9998V22.9998C0.000236809 23.265 0.119959 23.5194 0.333067 23.7069C0.546174 23.8944 0.83521 23.9998 1.13659 23.9998H48.8634C49.0135 24.0025 49.1626 23.9785 49.3019 23.9292C49.4412 23.8799 49.5677 23.8064 49.6738 23.713C49.78 23.6196 49.8636 23.5082 49.9196 23.3857C49.9756 23.2631 50.0029 23.1319 49.9998 22.9998V20.9998C49.9998 20.7346 49.88 20.4803 49.6669 20.2927C49.4538 20.1052 49.1648 19.9999 48.8634 19.9999H1.13659Z" fill="currentColor"/>
+        </svg>
+      </button>
+    </div>
+    <nav class="main-nav">
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link" href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link"  href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main-container">
+    <h1 class="visually-hidden">Страница конкурса PINK</h1>
+    <div class="form-header">
+      <h2 class="form-header__title">Конкурс на&nbsp;самое безбашенное путешествие с&nbsp;Пинк</h2>
+    </div>
+    <section class="form-container">
+      <div class="form-header__wrapper">
+        <p class="form-header__description">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на&nbsp;вашу бонусную карту!</p>
+        <span class="form-header__form-add">Пожалуйста, заполните форму ниже:</span>
+      </div>
+        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+          <!-- ФИО -->
+          <div class="form-name__wrapper">
+            <fieldset class="form__fieldset form-name">
+              <legend class="form__legend visually-hidden">
+                Данные пользователя
+              </legend>
+              <ul class="form-name__list">
+                <li class="form-name__item">
+                  <label class="form__lable" for="form__surname-lable">
+                    Фамилия:
+                  </label>
+                  <input class="form__input" id="form__surname-lable" type="text" placeholder="Укажите фамилию *" name="surname" required >
+                </li>
+                <li class="form-name__item">
+                  <label class="form__lable" for="form__name-lable">
+                    Имя:
+                  </label>
+                  <input class="form__input" id="form__name-lable" type="text" placeholder="Введите ваше имя *"name="name" required >
+                </li>
+                <li class="form-name__item">
+                  <label class="form__lable" for="form__patronymic-lable">
+                    Отчество:
+                  </label>
+                  <input class="form__input" id="form__patronymic-lable" type="text" placeholder="Ну&nbsp;и&nbsp;отчество тоже" name="patronymic">
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <!-- Достижения -->
+          <div class="form-achievements__wrapper">
+            <fieldset class="form__fieldset form-achievements">
+              <legend class="form-achievements__legend form-legend">
+                Ваши безбашенные достижения в&nbsp;путешествии
+              </legend>
+              <ul class="form-achievements__list">
+                <li class="form-achievements__item">
+                  <label class="form__lable">
+                    <input class="form__checkbox" type="checkbox" name="achievements-shark" checked>
+                    <span class="form__checkbox-text">Сделал селфи с&nbsp;акулой</span>
+                  </label>
+                </li>
+                <li class="form-achievements__item">
+                  <label class="form__lable">
+                    <input class="form__checkbox" type="checkbox" name="achievements-beach" checked>
+                    <span class="form__checkbox-text">Обгорел на&nbsp;пляже</span>
+                  </label>
+                </li>
+                <li class="form-achievements__item">
+                  <label class="form__lable">
+                    <input class="form__checkbox" type="checkbox" name="achievements-noris">
+                    <span class="form__checkbox-text">Видел Чака Норриса</span>
+                  </label>
+                </li>
+                <li class="form-achievements__item">
+                  <label class="form__lable">
+                    <input class="form__checkbox" type="checkbox" name="achievements-suvenirs">
+                    <span class="form__checkbox-text">Накупил сувениров</span>
+                  </label>
+                </li>
+                <li class="form-achievements__item">
+                  <label class="form__lable">
+                    <input class="form__checkbox" type="checkbox" name="achievements-tower" checked>
+                    <span class="form__checkbox-text">Удержал башню</span>
+                  </label>
+                </li>
+                <li class="form-achievements__item">
+                  <label class="form__lable">
+                    <input class="form__checkbox" type="checkbox" name="achievements-hotel">
+                    <span class="form__checkbox-text">Разгромил отель</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <!-- контактная информация -->
+          <div class="form-contacts__wrapper">
+            <fieldset class="form__fieldset form-contacts">
+              <legend class="form__legend">
+                контактная информация
+              </legend>
+              <ul class="form-contacts__list">
+                <li class="form-contacts__item">
+                  <label class="form__lable" for="form__phone-label">
+                    Номер телефона
+                  </label>
+                  <input class="form__input" id="form__phone-label" type="tel" placeholder="Номер, пожалуйста">
+                </li>
+                <li class="form-contacts__item">
+                  <label class="form__lable" for="form__email-label">
+                    Адрес почты
+                  </label>
+                  <input class="form__input" id="form__email-label" type="email" placeholder="Введите почту *" required>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <!-- Приложение для путешествия -->
+          <div class="form-platform__wrapper">
+            <fieldset class="form__fieldset form-platform">
+              <legend class="form-platform__legend form-legend">
+                С&nbsp;каким приложением путешествовали?
+              </legend>
+              <ul class="form-platform__list">
+                <li class="form-platform__item">
+                  <label class="form__label">
+                    <input class="form__radio" type="radio" name="platform" value="ios" checked>
+                    <span class="form__radio-text">Pink для iOS</span>
+                  </label>
+                </li>
+                <li class="form-platform__item">
+                  <label class="form__label">
+                    <input class="form__radio" type="radio" name="platform" value="android">
+                    <span class="form__radio-text">Pink на&nbsp;Android</span>
+                  </label>
+                </li>
+                <li class="form-platform__item">
+                  <label class="form__label">
+                    <input class="form__radio" type="radio" name="platform" value="windows">
+                    <span class="form__radio-text">Windows Phone</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <!-- Форма эмоций -->
+          <div class="form-emotions__wrapper">
+            <fieldset class="form__fieldset form-emotions">
+              <legend class="form-emotions__legend form-legend">
+                Опишите свои эмоции
+              </legend>
+              <label class="visually-hidden form__label" for="form__text-field-label">
+                Поле ввода
+              </label>
+              <textarea class="form__text-field" id="form__text-field-label" name="emotions-text-field">Можно прям в&nbsp;красках, не стесняясь в&nbsp;выражениях</textarea>
+            </fieldset>
+          </div>
+          <div class="form__send">
+            <button class="button form__send-button" type="submit">Отправить форму</button>
+            <p class="form__send-required-fields"><sup>*</sup> — обязательные поля</p>
+        </div>
+        </form>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <a class="main-footer__link" href="index.html">
+        <img class="main-footer__logo" src="img/logotype-blue-tablet.svg" width="145" height="40" alt="Логотип Пинк">
+      </a>
+        <ul class="main-footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <svg class="social__icon" width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5875 0.711C17.712 0.3015 17.5875 0 16.9913 0H15.0225C14.5215 0 14.2905 0.26025 14.1652 0.5475C14.1652 0.5475 13.164 2.9445 11.7458 4.5015C11.2867 4.953 11.0782 5.09625 10.8278 5.09625C10.7025 5.09625 10.5142 4.953 10.5142 4.54275V0.711C10.5142 0.219 10.3763 0 9.95925 0H6.86325C6.5505 0 6.36225 0.228 6.36225 0.44475C6.36225 0.9105 7.07175 1.0185 7.1445 2.3295V5.178C7.1445 5.80275 7.02975 5.916 6.77925 5.916C6.11175 5.916 4.488 3.50775 3.52425 0.75225C3.3375 0.216 3.1485 0 2.64525 0H0.675C0.1125 0 0 0.26025 0 0.5475C0 1.059 0.6675 3.6 3.10875 6.96075C4.73625 9.25575 7.0275 10.5 9.11475 10.5C10.3665 10.5 10.521 10.224 10.521 9.74775V8.013C10.521 7.46025 10.6395 7.35 11.0363 7.35C11.3287 7.35 11.829 7.494 12.9975 8.60025C14.3325 9.912 14.5523 10.5 15.3038 10.5H17.2725C17.835 10.5 18.117 10.224 17.955 9.678C17.7765 9.135 17.139 8.34675 16.2938 7.4115C15.8348 6.879 15.1463 6.30525 14.937 6.018C14.6453 5.64975 14.7285 5.4855 14.937 5.15775C14.937 5.15775 17.337 1.83825 17.5868 0.711H17.5875Z" fill="#D22856"/>
+              </svg>
+              <span class="visually-hidden">Мы в контакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://t.me/htmlacademy">
+              <svg class="social__icon" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.7035 1.20204L13.3269 12.4099C13.1475 13.2007 12.68 13.3976 12.0157 13.0252L8.39433 10.3567L6.64721 12.0375C6.45371 12.231 6.29227 12.3924 5.91934 12.3924L6.17977 8.70467L12.891 2.64035C13.1829 2.38048 12.8274 2.23592 12.4376 2.49635L4.14071 7.72085L0.568836 6.6026C-0.207976 6.36017 -0.222039 5.82579 0.730836 5.45285L14.7016 0.0702911C15.3485 -0.172146 15.9144 0.214291 15.7035 1.2026V1.20204Z" fill="#D22856"/>
+              </svg>
+              <span class="visually-hidden">Мы в телеграме</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://www.youtube.com/user/htmlacademyru">
+              <svg class="social__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.83356 12.8089C1.64633 12.9278 1.42471 12.9941 1.19626 12.9996C0.967817 13.0051 0.74263 12.9495 0.548717 12.8398C0.354804 12.7301 0.200724 12.571 0.105646 12.3824C0.010569 12.1938 -0.0213097 11.984 0.0139762 11.779V1.22097C-0.0213097 1.01605 0.010569 0.806234 0.105646 0.617628C0.200724 0.429021 0.354804 0.269949 0.548717 0.1602C0.74263 0.0504516 0.967817 -0.00512927 1.19626 0.000372265C1.42471 0.0058738 1.64633 0.0722149 1.83356 0.191142L14.2333 5.69284C15.2556 6.13817 15.2556 6.86183 14.2333 7.30716L1.83356 12.8089Z" fill="#D22856"/>
+              </svg>
+              <span class="visually-hidden">Мы в ютубе</span>
+            </a>
+          </li>
+        </ul>
+        <div class="main-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML Academy</span>
+            <svg width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+              <path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+  </footer>
+  <script>
+    const toggles = document.querySelectorAll('.toggles__item');
+    let activeItem = document.querySelector('.toggles__item--active')
+
+    toggles.forEach((item) => {
+      item.addEventListener('click', () => {
+        if (activeItem) {
+          activeItem.classList.remove('toggles__item--active')
+          activeItem = null;
+        }
+
+        item.classList.add('toggles__item--active');
+        activeItem = item;
+      })
+    })
+  </script>
+</body>
+</html>
