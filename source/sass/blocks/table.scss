@@ -5,6 +5,7 @@
   text-align: center;
   text-transform: uppercase;
   color: $white;
+  background-color: #283645;
 }
 
 .price__rate {
@@ -18,7 +19,6 @@
 }
 
 .table__option {
-  font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   color: #283645;
@@ -26,8 +26,4 @@
 
 .table__cell {
   padding: 20px;
-}
-
-.table__header-cell {
-  background-color: #283645;
 }

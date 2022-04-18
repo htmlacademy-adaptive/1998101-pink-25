@@ -30,7 +30,6 @@
 
 .catalog__description {
   font-size: 14px;
-  font-weight: 400;
   line-height: 30px;
   text-align: center;
   margin-bottom: 60px;
@@ -41,16 +40,6 @@
   padding-left: 17px;
   padding-right: 17px;
 }
-
-/* .catalog__photo--panorama {
-  position: absolute;
-  width: 140px;
-  height: 36px;
-  left: 160px;
-  top: 421px;
-  background-color: #D22856;
-  margin: 0 -20px;
-} */
 
 .catalog__author {
   font-size: 14px;
@@ -70,7 +59,6 @@
 
 .catalog__message {
   font-size: 14px;
-  font-weight: 400;
   line-height: 24px;
   text-align: left;
   margin-top: 0;
@@ -91,14 +79,12 @@
 
 .button-catalog__like-text {
   font-size: 12px;
-  font-weight: 400;
   line-height: 24px;
   color: #d22856;
 }
 
 .upload__description {
   font-size: 14px;
-  font-weight: 400;
   line-height: 30px;
   text-align: center;
   color: #283645;

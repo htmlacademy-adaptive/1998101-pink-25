@@ -4,7 +4,7 @@
 
 .main-nav__toggle {
   @include button-reset;
-  color: #ffffff;
+  color: $white;
 }
 
 .main-nav__list {
