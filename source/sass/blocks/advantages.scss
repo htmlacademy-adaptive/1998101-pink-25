@@ -1,5 +1,13 @@
 .advantages__wrapper {
   @include wrapper;
+
+  @media (min-width: $md) {
+    @include tablet;
+  }
+
+  @media (min-width: $lg) {
+    @include desktop;
+  }
 }
 
 .advantages__intro {
@@ -10,6 +18,13 @@
   font-weight: 300;
   line-height: 29px;
   text-align: center;
+
+  @media (min-width: $md) {
+    width: 97%;
+    font-size: 40px;
+    line-height: 54px;
+    text-align: center;
+  }
 }
 
 .advantages__list {
@@ -26,14 +41,57 @@
   font-weight: 700;
   line-height: 24px;
   text-align: center;
-  color: #000000;
+
+  @media (min-width: $lg) {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+.advantages__title--effect {
+  @media (min-width: $md) {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+    width: 30%;
+    margin: 0;
+  }
+
+
 }
 
 .advantages__description {
-  font-size: 14px;
   line-height: 24px;
   text-align: center;
   color: #283645;
+
+  @media (min-width: $md) {
+    text-align: left;
+  }
+
+  @media (min-width: $lg) {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: left;
+    width: 61%;
+  }
+}
+
+.advantages__link {
+  text-align: left;
+  color: #d22856;
+
+  @media (min-width: $md) {
+    line-height: 24px;
+  }
+
+  @media (min-width: $lg) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .advantages__description-img {
@@ -42,4 +100,14 @@
 
 .effect__wrapper {
   display: none;
+
+  @media (min-width: $md) {
+    display: block;
+    background-image: url("../../img/clock.png");
+    background-repeat: no-repeat;
+    margin-top: 54px;
+    padding-bottom: 109px;
+    padding-top: 48px;
+    padding-left: 310px;
+  }
 }

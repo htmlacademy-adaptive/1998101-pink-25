@@ -1,5 +1,13 @@
 .contacts__wrapper {
   @include wrapper;
+
+  @media (min-width: $md) {
+    @include tablet;
+  }
+
+  @media (min-width: $lg) {
+    @include desktop;
+  }
 }
 
 .contacts__title { //можно вынести в блок по бэму т.к. в блоке advantages есть точно такой же заголовок и на других страницах тоже
@@ -7,6 +15,32 @@
   font-weight: 300;
   line-height: 29px;
   text-align: center;
+
+  @media (min-width: $md) {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 54px;
+    color: #283645;
+    margin-bottom: 51px;
+  }
+}
+
+.contacts__phone {
+  @media (min-width: $md) {
+    display: inline-block;
+  }
+}
+
+.contacts__email {
+  @media (min-width: $md) {
+    display: inline-block;
+  }
+}
+
+.contacts__address {
+  @media (min-width: $lg) {
+    display: inline-block;
+  }
 }
 
 .phone__title {
@@ -17,6 +51,14 @@
   line-height: 25px;
   text-align: center;
   color: #283645;
+
+  @media (min-width: $md) {
+    margin-bottom: 17px;
+  }
+
+  @media (min-width: $lg) {
+    margin-bottom: 34px;
+  }
 }
 
 .contacts__phone-link {
@@ -38,6 +80,14 @@
   line-height: 25px;
   text-align: center;
   color: #283645;
+
+  @media (min-width: $md) {
+    margin-bottom: 17px;
+  }
+
+  @media (min-width: $lg) {
+    margin-bottom: 34px;
+  }
 }
 
 .contacts__email-link {
@@ -58,6 +108,14 @@
   line-height: 25px;
   text-align: center;
   margin-bottom: 31px;
+
+  @media (min-width: $md) {
+    margin-bottom: 17px;
+  }
+
+  @media (min-width: $lg) {
+    margin-bottom: 34px;
+  }
 }
 
 .contacts__address-link {

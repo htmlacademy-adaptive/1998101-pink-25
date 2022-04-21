@@ -1,6 +1,14 @@
 .intro__wrapper {
   @include wrapper;
   background-color: #1d2631;
+
+  @media (min-width: $md) {
+    @include tablet;
+  }
+
+  @media (min-width: $lg) {
+    @include desktop;
+  }
 }
 
 .intro__slogan {

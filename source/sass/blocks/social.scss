@@ -5,6 +5,10 @@
   gap: 9px;
   justify-content: center;
   margin-bottom: 38px;
+
+  @media (min-width: $md) {
+    margin-bottom: 0;
+  }
 }
 
 .social__item {

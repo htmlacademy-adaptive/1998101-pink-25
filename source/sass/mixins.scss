@@ -17,3 +17,19 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin tablet {
+  width: 100%;
+  max-width: $md;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@mixin desktop {
+  width: 100%;
+  max-width: $lg;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}

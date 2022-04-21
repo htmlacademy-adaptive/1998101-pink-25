@@ -17,4 +17,12 @@
     z-index: -1;
     background-color: rgba(#000000, 0.3);
   }
+
+  @media (min-width: $md) {
+    @include tablet;
+  }
+
+  @media (min-width: $lg) {
+    @include desktop;
+  }
 }

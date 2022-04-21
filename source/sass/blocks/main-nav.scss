@@ -1,14 +1,44 @@
 .main-nav__wrapper {
   display: none;
+
+  @media (min-width: $lg) {
+    display: flex;
+  }
 }
 
 .main-nav__toggle {
   @include button-reset;
   color: $white;
+
+  @media (min-width: $lg) {
+    display: none;
+  }
 }
 
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $lg) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 700px;
+  }
+}
+
+.site-list__item {
+  @media (min-width: $lg) {
+    margin-right: 79px;
+  }
+}
+
+.site-list__link {
+  @media (min-width: $lg) {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    color: $white;
+  }
 }
