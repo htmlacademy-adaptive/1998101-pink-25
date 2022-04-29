@@ -4,6 +4,10 @@
   background-repeat: no-repeat;
   margin-top: -90px;
   margin-bottom: 54px;
+
+  @media (min-width: $md) {
+    background-image: url("../../img/background-tablet.png");
+  }
 }
 
 .catalog__wrapper {
