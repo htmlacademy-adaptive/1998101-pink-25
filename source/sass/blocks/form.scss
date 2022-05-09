@@ -1,13 +1,18 @@
-.form__wrapper {
-  /* @include wrapper; */
-}
+/* .form__wrapper {
+  @include wrapper;
+} */
 
 .form-header {
   @include wrapper;
   background-image: url("../../img/background-mobile.png");
   background-repeat: no-repeat;
+  background-size: cover;
   margin-top: -90px;
   margin-bottom: 54px;
+
+  @media (min-width: $md) {
+    margin-top: -110px;
+  }
 }
 
 .form-header__title {
@@ -16,8 +21,17 @@
   line-height: 33px;
   text-align: center;
   color: $white;
-  padding-top: 119px;
-  padding-bottom: 51px;
+  padding: 102px 36px 51px 36px;
+
+  @media (min-width: $md) {
+    font-size: 50px;
+    line-height: 68px;
+    padding-bottom: 74px;
+  }
+
+  @media (min-width: $lg) {
+    padding-bottom: 104px;
+  }
 }
 
 .form-header__wrapper {
@@ -28,24 +42,68 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+  margin: 0;
   margin-bottom: 55px;
+
+  @media (min-width: $md) {
+    font-size: 18px;
+    margin-bottom: 82px;
+    margin-left: 65px;
+    margin-right: 65px;
+  }
+
+  @media (min-width: $lg) {
+    margin-left: 92px;
+    margin-right: 92px;
+  }
 }
 
 .form-header__form-add {
   display: none;
+
+  @media (min-width: $md) {
+    display: block;
+  }
 }
 
 .form-name__wrapper {
   @include wrapper;
-  margin-bottom: 44px;
+  margin-bottom: 15px;
+  padding-left: 22px;
+  padding-right: 22px;
+
+  @media (min-width: $md) {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
 }
 
 .form-name__list {
   @include list-reset;
 }
 
+.form-name__item {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $md) {
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
 .form__fieldset {
   border: 0 none;
+
+  @media (min-width: $md) {
+    border: 2px solid #e5e5e5;
+    padding: 47px 60px 53px;
+  }
+}
+
+.form-name {
+  border: 0 none;
+  padding: 0;
 }
 
 .form__lable {
@@ -53,6 +111,18 @@
   line-height: 30px;
   text-align: left;
   color: #d22856;
+  margin-bottom: 17px;
+}
+
+
+
+.form__lable--name {
+  padding-left: 23px;
+  text-transform: uppercase;
+
+  @media (min-width: $md) {
+    padding-right: 20px;
+  }
 }
 
 .form-legend {
@@ -61,6 +131,10 @@
   text-align: center;
   color: #d22856;
   text-transform: uppercase;
+
+  @media (min-width: $md) {
+    line-height: 30px;
+  }
 }
 
 .form-achievements__wrapper {
@@ -68,10 +142,18 @@
   background-color: #f2f2f2;
   padding-top: 42px;
   padding-bottom: 44px;
+
+  @media (min-width: $md) {
+    background-color: #ffffff;
+  }
 }
 
 .form-achievements__list {
   @include list-reset;
+
+  @media (min-width: $md) {
+    margin-left: 60px;
+  }
 }
 
 .form-achievements__legend {
@@ -92,11 +174,20 @@
 .form-contacts__wrapper {
   @include wrapper;
   padding-top: 42px;
-  padding-bottom: 44px;
+  padding-bottom: 15px;
 }
 
 .form-contacts__list {
   @include list-reset;
+}
+
+.form-contacts__legend {
+  display: none;
+}
+
+.form__lable--contacts {
+  padding-left: 23px;
+  text-transform: uppercase;
 }
 
 .form-platform__wrapper {
@@ -104,6 +195,10 @@
   background-color: #f2f2f2;
   padding-top: 42px;
   padding-bottom: 42px;
+
+  @media (min-width: $md) {
+    background-color: #ffffff;
+  }
 }
 
 .form-platform__list {
@@ -121,7 +216,7 @@
 .form-emotions__wrapper {
   @include wrapper;
   padding-top: 42px;
-  padding-bottom: 26px;
+  padding-bottom: 52px;
 }
 
 .form-emotions__legend {
@@ -130,6 +225,13 @@
 
 .form__send {
   @include wrapper;
+
+  @media (min-width: $md) {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
 
 .form__send-button {
@@ -138,10 +240,14 @@
   border: 2px solid #2aab6d;
   border-radius: 1px;
   margin-bottom: 46px;
+
+  @media (min-width: $md) {
+    width: 47%;
+  }
 }
 
 .form__input {
-  width: 276px;
+  max-width: 100%;
   height: 59px;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
@@ -151,10 +257,16 @@
   text-align: left;
   color: #283645;
   padding-left: 20px;
+  margin-bottom: 29px;
+
+  @media (min-width: $md) {
+    width: 100%;
+    margin-bottom: 56px;
+  }
 }
 
 .form__text-field {
-  width: 276px;
+  min-width: 100%;
   height: 197px;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
@@ -163,6 +275,10 @@
   line-height: 30px;
   text-align: left;
   padding: 22px 0 22px 20px;
+
+  @media (min-width: $md) {
+    margin-top: 0;
+  }
 }
 
 .form__send-required-fields {
