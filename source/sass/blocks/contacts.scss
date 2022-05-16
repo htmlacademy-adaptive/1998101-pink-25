@@ -1,5 +1,13 @@
 .contacts__wrapper {
   @include wrapper;
+
+  @media (min-width: $md) {
+    @include tablet;
+  }
+
+  @media (min-width: $lg) {
+    @include desktop;
+  }
 }
 
 .contacts__title { //можно вынести в блок по бэму т.к. в блоке advantages есть точно такой же заголовок и на других страницах тоже
@@ -7,16 +15,78 @@
   font-weight: 300;
   line-height: 29px;
   text-align: center;
+  margin-top: 56px;
+  margin-bottom: 56px;
+
+  @media (min-width: $md) {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 54px;
+    color: #283645;
+    margin-bottom: 51px;
+  }
+
+  @include desktop() {
+    margin-bottom: 61px;
+  }
+}
+
+.contacts__container {
+  @include tablet() {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 97px;
+    row-gap: 55px;
+  }
+
+  @include desktop() {
+    display: flex;
+  }
+}
+
+.contacts__phone {
+  @include tablet() {
+    display: inline-block;
+  }
+}
+
+.contacts__email {
+  @include tablet() {
+    display: inline-block;
+  }
+
+  @include desktop() {
+    margin-right: 94px;
+  }
+}
+
+.contacts__address {
+  @include tablet() {
+    grid-column: 1 / 3;
+  }
+
+  @media (min-width: $lg) {
+    display: inline-block;
+  }
+
 }
 
 .phone__title {
   display: block;
-  margin: 0 117px 13px;
   font-size: 18px;
   font-weight: 700;
   line-height: 25px;
   text-align: center;
   color: #283645;
+  margin-bottom: 13px;
+
+  @media (min-width: $md) {
+    margin-bottom: 17px;
+  }
+
+  @media (min-width: $lg) {
+    margin-bottom: 34px;
+  }
 }
 
 .contacts__phone-link {
@@ -28,6 +98,10 @@
   color: #d22856;
   margin-bottom: 31px;
   text-decoration: none;
+
+  @include tablet() {
+    margin: 0;
+  }
 }
 
 .email__title {
@@ -38,6 +112,14 @@
   line-height: 25px;
   text-align: center;
   color: #283645;
+
+  @media (min-width: $md) {
+    margin-bottom: 17px;
+  }
+
+  @media (min-width: $lg) {
+    margin-bottom: 34px;
+  }
 }
 
 .contacts__email-link {
@@ -47,8 +129,12 @@
   line-height: 33px;
   text-align: center;
   color: #d22856;
-  margin-bottom: 31px;
+  margin-bottom: 35px;
   text-decoration: none;
+
+  @include tablet() {
+    margin: 0;
+  }
 }
 
 .adress__title {
@@ -57,7 +143,15 @@
   font-weight: 700;
   line-height: 25px;
   text-align: center;
-  margin-bottom: 31px;
+  margin-bottom: 13px;
+
+  @media (min-width: $md) {
+    margin-bottom: 17px;
+  }
+
+  @media (min-width: $lg) {
+    margin-bottom: 34px;
+  }
 }
 
 .contacts__address-link {
@@ -67,8 +161,38 @@
   text-align: center;
   color: #d22856;
   margin-bottom: 41px;
+
+  @include tablet() {
+    margin-bottom: 30px;
+  }
 }
 
-.contacts__map {
+/* .contacts iframe {
+  border: none;
+  display: block;
   margin-bottom: 40px;
+} */
+
+.contacts__map {
+  margin-left: -20px;
+  margin-right: -20px;
+
+  @include desktop() {
+    margin-left: -130px;
+    margin-right: -130px;
+  }
+}
+
+.contacts__googlemap {
+  border: none;
+  display: block;
+  margin-bottom: 40px;
+
+  @include tablet() {
+    min-height: 374px;
+  }
+
+  @include desktop() {
+    min-height: 502px;
+  }
 }
