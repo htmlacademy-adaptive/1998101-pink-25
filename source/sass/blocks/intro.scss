@@ -1,6 +1,30 @@
+.intro {
+  @include desktop() {
+    margin-bottom: 77px;
+  }
+}
+
 .intro__wrapper {
   @include wrapper;
   background-color: #1d2631;
+
+  @include tablet() {
+    background-image: url("../../img/background-hand-tablet.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 212px;
+    margin-top: -114px;
+  }
+}
+
+.intro__button {
+  @include tablet() {
+    max-width: 300px;
+  }
+}
 
  /*  @media (min-width: $md) {
     @include tablet;
@@ -9,7 +33,6 @@
   @media (min-width: $lg) {
     @include desktop;
   } */
-}
 
 .intro__slogan {
   color: #ffffff;
@@ -19,6 +42,15 @@
   line-height: 29px;
   text-align: center;
   font-weight: 300;
+
+  @include tablet() {
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 0;
+    margin-bottom: 39px;
+    max-width: 60%;
+    padding-left: 70px;
+  }
 }
 
 .intro__list {
@@ -27,6 +59,11 @@
   grid-template-columns: repeat(3, 48px);
   justify-content: center;
   gap: 35px;
+
+  @include tablet() {
+    width: 100%;
+    max-width: 300px;
+  }
 }
 
 .intro__item {
@@ -57,4 +94,17 @@
   margin-right: -20px;
   margin-bottom: 28px;
   background-size: cover;
+
+  @include tablet() {
+    background-image: none;
+  }
+}
+
+.intro__image {
+  display: flex;
+  justify-content: center;
+
+  @include tablet() {
+    display: none;
+  }
 }

@@ -9,7 +9,7 @@
 <body>
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo">
+      <a class="main-header__logo"  href="index.html">
         <img src="img/logotype-mobile.svg" width="74" height="23" alt="Фотоприложение Pink">
       </a>
       <button class="main-nav__toggle" type="button">
@@ -23,7 +23,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a class="site-list__link" href="#">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="catalog.html">Фотографии</a>
@@ -32,7 +32,7 @@
               <a class="site-list__link" href="#">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link"  href="#">HTML Academy</a>
+              <a class="site-list__link"  href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -54,7 +54,7 @@
       </div>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
           <!-- ФИО -->
-          <div class="form-name__wrapper">
+          <div class="form__name">
             <fieldset class="form__fieldset form-name">
               <legend class="form__legend visually-hidden">
                 Данные пользователя
@@ -82,45 +82,51 @@
             </fieldset>
           </div>
           <!-- Достижения -->
-          <div class="form-achievements__wrapper">
+          <div class="form__achievements">
             <fieldset class="form__fieldset form-achievements">
               <legend class="form-achievements__legend form-legend">
                 Ваши безбашенные достижения в&nbsp;путешествии
               </legend>
               <ul class="form-achievements__list">
                 <li class="form-achievements__item">
-                  <label class="form__lable">
-                    <input class="form__checkbox" type="checkbox" name="achievements-shark" checked>
+                  <input class="form__checkbox visually-hidden" type="checkbox" id="achievements-shark" name="achievements-shark" checked>
+
+                  <label class="form__lable form__lable-checkbox" for="achievements-shark">
                     <span class="form__checkbox-text">Сделал селфи с&nbsp;акулой</span>
                   </label>
                 </li>
                 <li class="form-achievements__item">
-                  <label class="form__lable">
-                    <input class="form__checkbox" type="checkbox" name="achievements-beach" checked>
+                  <input class="form__checkbox visually-hidden" type="checkbox" id="achievements-beach" name="achievements-beach" checked>
+
+                  <label class="form__lable form__lable-checkbox" for="achievements-beach">
                     <span class="form__checkbox-text">Обгорел на&nbsp;пляже</span>
                   </label>
                 </li>
                 <li class="form-achievements__item">
-                  <label class="form__lable">
-                    <input class="form__checkbox" type="checkbox" name="achievements-noris">
+                  <input class="form__checkbox visually-hidden" type="checkbox" id="achievements-noris" name="achievements-noris">
+
+                  <label class="form__lable form__lable-checkbox" for="achievements-noris">
                     <span class="form__checkbox-text">Видел Чака Норриса</span>
                   </label>
                 </li>
                 <li class="form-achievements__item">
-                  <label class="form__lable">
-                    <input class="form__checkbox" type="checkbox" name="achievements-suvenirs">
+                  <input class="form__checkbox visually-hidden" type="checkbox" id="achievements-suvenirs" name="achievements-suvenirs">
+
+                  <label class="form__lable form__lable-checkbox" for="achievements-suvenirs">
                     <span class="form__checkbox-text">Накупил сувениров</span>
                   </label>
                 </li>
                 <li class="form-achievements__item">
-                  <label class="form__lable">
-                    <input class="form__checkbox" type="checkbox" name="achievements-tower" checked>
+                  <input class="form__checkbox visually-hidden" type="checkbox" is="achievements-tower" name="achievements-tower" checked>
+
+                  <label class="form__lable form__lable-checkbox" for="achievements-tower">
                     <span class="form__checkbox-text">Удержал башню</span>
                   </label>
                 </li>
                 <li class="form-achievements__item">
-                  <label class="form__lable">
-                    <input class="form__checkbox" type="checkbox" name="achievements-hotel">
+                  <input class="form__checkbox visually-hidden" type="checkbox" id="achievements-hotel" name="achievements-hotel">
+
+                  <label class="form__lable form__lable-checkbox" for="achievements-hotel">
                     <span class="form__checkbox-text">Разгромил отель</span>
                   </label>
                 </li>
@@ -128,7 +134,7 @@
             </fieldset>
           </div>
           <!-- контактная информация -->
-          <div class="form-contacts__wrapper">
+          <div class="form__contacts">
             <fieldset class="form__fieldset form-contacts">
               <legend class="form-contacts__legend form-legend">
                 контактная информация
@@ -138,39 +144,42 @@
                   <label class="form__lable form__lable--contacts" for="form__phone-label">
                     Номер телефона
                   </label>
-                  <input class="form__input" id="form__phone-label" type="tel" placeholder="Номер, пожалуйста">
+                  <input class="form__input form__input--contacts" id="form__phone-label" type="tel" placeholder="Номер, пожалуйста">
                 </li>
                 <li class="form-contacts__item">
                   <label class="form__lable form__lable--contacts" for="form__email-label">
                     Адрес почты
                   </label>
-                  <input class="form__input" id="form__email-label" type="email" placeholder="Введите почту *" required>
+                  <input class="form__input form__input--contacts" id="form__email-label" type="email" placeholder="Введите почту *" required>
                 </li>
               </ul>
             </fieldset>
           </div>
           <!-- Приложение для путешествия -->
-          <div class="form-platform__wrapper">
+          <div class="form__platform">
             <fieldset class="form__fieldset form-platform">
               <legend class="form-platform__legend form-legend">
-                С&nbsp;каким приложением путешествовали?
+                С каким приложением путешествовали?
               </legend>
               <ul class="form-platform__list">
                 <li class="form-platform__item">
-                  <label class="form__label">
-                    <input class="form__radio" type="radio" name="platform" value="ios" checked>
+                  <input class="form__radio visually-hidden" type="radio" id="platform-ios" name="platform" value="ios" checked>
+                  <label class="form__label" for="platform-ios">
+
                     <span class="form__radio-text">Pink для iOS</span>
                   </label>
                 </li>
                 <li class="form-platform__item">
-                  <label class="form__label">
-                    <input class="form__radio" type="radio" name="platform" value="android">
+                  <input class="form__radio visually-hidden" type="radio" id="platform-android" name="platform" value="android">
+                  <label class="form__label" for="platform-android">
+
                     <span class="form__radio-text">Pink на&nbsp;Android</span>
                   </label>
                 </li>
                 <li class="form-platform__item">
-                  <label class="form__label">
-                    <input class="form__radio" type="radio" name="platform" value="windows">
+                  <input class="form__radio visually-hidden" type="radio" name="platform" id="platform-windows" value="windows">
+
+                  <label class="form__label" for="platform-windows">
                     <span class="form__radio-text">Windows Phone</span>
                   </label>
                 </li>
@@ -178,15 +187,15 @@
             </fieldset>
           </div>
           <!-- Форма эмоций -->
-          <div class="form-emotions__wrapper">
+          <div class="form__emotions">
             <fieldset class="form__fieldset form-emotions">
               <legend class="form-emotions__legend form-legend">
                 Опишите свои эмоции
               </legend>
-              <label class="visually-hidden form__label" for="form__text-field-label">
+              <label class="visually-hidden form__label" for="message">
                 Поле ввода
               </label>
-              <textarea class="form__text-field" id="form__text-field-label" name="emotions-text-field">Можно прям в&nbsp;красках, не стесняясь в&nbsp;выражениях</textarea>
+              <textarea class="form__text-field" id="message" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
           </div>
           <div class="form__send">
