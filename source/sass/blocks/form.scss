@@ -418,13 +418,6 @@
   }
 }
 
-.form__input--contacts {
-  @include desktop() {
-    margin-bottom: 22px;
-    order: 1;
-  }
-}
-
 .form__text-field {
   min-width: 100%;
   height: 197px;
