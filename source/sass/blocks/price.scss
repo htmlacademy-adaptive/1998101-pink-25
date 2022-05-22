@@ -1,12 +1,39 @@
 .price {
   background-color: #f2f2f2;
-  clip-path: polygon(0% 3.5%, 100% 0%, 100% 100%, 0 100%);
+  // clip-path: polygon(0% 3.5%, 100% 0%, 100% 100%, 0 100%);
 }
 
 .price__wrapper {
   @include wrapper;
+  padding-left: 0;
+  padding-right: 0;
 
-  @media (min-width: $md) {
-    @include tablet;
+  @include tablet() {
+    padding-top: 58px;
+    padding-bottom: 34px;
+  }
+
+  @include desktop() {
+    padding-top: 91px;
+    padding-bottom: 66px;
+  }
+}
+
+.price__table-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.price__rate {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+
+  @include desktop() {
+    font-size: 24px;
   }
 }

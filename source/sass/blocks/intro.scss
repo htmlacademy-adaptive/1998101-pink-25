@@ -1,6 +1,6 @@
 .intro {
   @include desktop() {
-    margin-bottom: 77px;
+    margin-bottom: 62px;
   }
 }
 
@@ -15,8 +15,18 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 212px;
+    padding-top: 208px;
+    padding-bottom: 44px;
     margin-top: -114px;
+    margin-bottom: 44px;
+  }
+
+  @include desktop() {
+    background-image: url("../../img/background-hand-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 51px;
+    margin-top: -110px;
   }
 }
 
@@ -36,8 +46,8 @@
 
 .intro__slogan {
   color: #ffffff;
-  margin: 0 20px 20px;
-  padding-top: 95px;
+  margin: 0 20px 28px;
+  padding-top: 88px;
   font-size: 24px;
   line-height: 29px;
   text-align: center;
@@ -47,9 +57,18 @@
     font-size: 40px;
     line-height: 1.2;
     margin: 0;
-    margin-bottom: 39px;
+    margin-bottom: 30px;
     max-width: 60%;
     padding-left: 70px;
+    padding-top: 64px;
+  }
+
+  @include desktop() {
+    font-size: 50px;
+    line-height: 68px;
+    padding-left: 39px;
+    padding-top: 70px;
+    margin-bottom: 36px;
   }
 }
 
@@ -59,10 +78,16 @@
   grid-template-columns: repeat(3, 48px);
   justify-content: center;
   gap: 35px;
+  margin-bottom: 22px;
 
   @include tablet() {
     width: 100%;
     max-width: 300px;
+    margin-bottom: 34px;
+  }
+
+  @include desktop() {
+    margin-bottom: 52px;
   }
 }
 
@@ -78,18 +103,32 @@
   line-height: 24px;
   text-align: center;
   color: #ffffff;
-  padding: 28px 20px 38px 20px;
+  margin: 0;
+  margin-bottom: 42px;
+  padding-bottom: 30px;
+
+  @include tablet() {
+    font-size: 18px;
+  }
 }
 
 .intro__button {
   width: 100%;
   margin-bottom: 32px;
+
+  @include tablet() {
+    margin-bottom: 46px;
+  }
+
+  @include desktop() {
+    margin-bottom: 68px;
+  }
 }
 
 .intro__inner {
   background-image: url("../../img/background-mobile.png");
   background-repeat: no-repeat;
-  margin-top: -70px;
+  margin-top: -65px;
   margin-left: -20px;
   margin-right: -20px;
   margin-bottom: 28px;
@@ -97,6 +136,7 @@
 
   @include tablet() {
     background-image: none;
+    margin-bottom: 0;
   }
 }
 
