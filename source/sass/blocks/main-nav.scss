@@ -1,8 +1,9 @@
 .main-nav {
   display: none;
 
-  @media (min-width: $lg) {
+  @include desktop() {
     display: flex;
+    margin-top: 16px;
   }
 }
 
@@ -10,7 +11,11 @@
   @include button-reset;
   color: $white;
 
-  @media (min-width: $lg) {
+  @include tablet() {
+    margin-top: 16px;
+  }
+
+  @include desktop() {
     display: none;
   }
 }
@@ -20,22 +25,25 @@
   padding: 0;
   list-style: none;
 
-  @media (min-width: $lg) {
+  @include desktop() {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 700px;
   }
 }
 
 .site-list__item {
-  @media (min-width: $lg) {
+  @include desktop() {
     margin-right: 79px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
 .site-list__link {
-  @media (min-width: $lg) {
+  @include desktop() {
     font-size: 18px;
     font-weight: 400;
     line-height: 18px;

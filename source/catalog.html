@@ -9,8 +9,12 @@
 <body>
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo"  href="index.html">
-        <img src="img/logotype-mobile.svg" width="74" height="23" alt="Фотоприложение Pink">
+      <a class="main-header__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/logotype-tablet.svg">
+          <img class="main-header__logo-img" src="img/logotype-mobile.svg" width="74" height="23" alt="Фотоприложение Pink">
+        </picture>
       </a>
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -19,11 +23,11 @@
           <path d="M1.13659 0.00020839C0.986512 -0.00251551 0.837358 0.0214885 0.698091 0.0707781C0.558823 0.120068 0.432317 0.193625 0.326173 0.28703C0.22003 0.380436 0.136442 0.49176 0.0804303 0.614315C0.024419 0.73687 -0.00285856 0.868124 0.000236809 1.00019V3.00016C0.000236809 3.26537 0.119959 3.51972 0.333067 3.70725C0.546174 3.89478 0.83521 4.00014 1.13659 4.00014H48.8634C49.0135 4.00286 49.1626 3.97886 49.3019 3.92957C49.4412 3.88028 49.5677 3.80672 49.6738 3.71332C49.78 3.61991 49.8636 3.50859 49.9196 3.38603C49.9756 3.26348 50.0029 3.13222 49.9998 3.00016V1.00019C49.9998 0.734979 49.88 0.48063 49.6669 0.293097C49.4538 0.105563 49.1648 0.00020839 48.8634 0.00020839H1.13659ZM1.13659 10C0.986512 9.99731 0.837358 10.0213 0.698091 10.0706C0.558823 10.1199 0.432317 10.1935 0.326173 10.2869C0.22003 10.3803 0.136442 10.4916 0.0804303 10.6141C0.024419 10.7367 -0.00285856 10.868 0.000236809 11V13C0.000236809 13.2652 0.119959 13.5195 0.333067 13.7071C0.546174 13.8946 0.83521 14 1.13659 14H48.8634C49.0135 14.0027 49.1626 13.9787 49.3019 13.9294C49.4412 13.8801 49.5677 13.8065 49.6738 13.7131C49.78 13.6197 49.8636 13.5084 49.9196 13.3859C49.9756 13.2633 50.0029 13.132 49.9998 13V11C49.9998 10.7348 49.88 10.4805 49.6669 10.2929C49.4538 10.1054 49.1648 10 48.8634 10H1.13659ZM1.13659 19.9999C0.986512 19.9971 0.837358 20.0211 0.698091 20.0704C0.558823 20.1197 0.432317 20.1933 0.326173 20.2867C0.22003 20.3801 0.136442 20.4914 0.0804303 20.614C0.024419 20.7365 -0.00285856 20.8678 0.000236809 20.9998V22.9998C0.000236809 23.265 0.119959 23.5194 0.333067 23.7069C0.546174 23.8944 0.83521 23.9998 1.13659 23.9998H48.8634C49.0135 24.0025 49.1626 23.9785 49.3019 23.9292C49.4412 23.8799 49.5677 23.8064 49.6738 23.713C49.78 23.6196 49.8636 23.5082 49.9196 23.3857C49.9756 23.2631 50.0029 23.1319 49.9998 22.9998V20.9998C49.9998 20.7346 49.88 20.4803 49.6669 20.2927C49.4538 20.1052 49.1648 19.9999 48.8634 19.9999H1.13659Z" fill="currentColor"/>
         </svg>
       </button>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a class="site-list__link" href="index.html">Главная</a>
+              <a class="site-list__link" href="#">Главная</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="catalog.html">Фотографии</a>
@@ -69,16 +73,20 @@
 
       <div class="catalog__wrapper">
         <h2 class="visually-hidden">Список фотографий пользователей</h2>
-        <p class="catalog__description">Взгляните на&nbsp;фотографии, которые выкладывают пользователи!<br>Видите, как не&nbsp;хватает ваших?</p>
+        <p class="catalog__description">Взгляните на&nbsp;фотографии, которые выкладывают пользователи!<br> Видите, как не&nbsp;хватает ваших?</p>
         <ul class="catalog__list">
           <li class="catalog__item catalog__item--panorama">
             <div class="catalog__photo">
-              <img class="catalog__image" src="img/panorama-tablet.jpg" width="320" height="137" alt="Панорама моста">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg">
+                <img class="catalog__image" src="img/panorama-mobile.jpg" width="320" height="137" alt="Панорама моста">
+              </picture>
             </div>
             <div class="catalog__user">
               <div class="catalog__user-inner">
                 <p class="catalog__author">Анна<span class="catalog__date">(5 минут назад)</span></p>
-                <p class="catalog__message">Прыгать или нет? Напишите в&nbsp;комментарии свой совет и&nbsp;смотрите прямую трансляцию в&nbsp;перископе, задавайте свои вопросы!</p>
+                <p class="catalog__message">Прыгать или нет? Напишите в комментарии свой совет и<br> смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
                 <div class="catalog__user-like">
                   <button class="button-catalog__like" type="button">
                     <span class="visually-hidden">Лайк!</span>
@@ -93,11 +101,15 @@
           </li>
           <li class="catalog__item">
             <div class="catalog__photo">
-              <img class="catalog__image" src="img/photo-1-mobile.jpg" width="280" height="180" alt="Фотосессия автомобиля">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-1-tablet.jpg">
+                <img class="catalog__image" src="img/photo-1-mobile.jpg" width="280" height="180" alt="Фотосессия автомобиля">
+              </picture>
             </div>
             <div class="catalog__user">
               <p class="catalog__author">Левон<span class="catalog__date">(5 часов назад)</span></p>
-              <p class="catalog__message">Вчера он&nbsp;на&nbsp;луну летал, сегодня в&nbsp;руки к&nbsp;нам попал.</p>
+              <p class="catalog__message">Вчера он&nbsp;на&nbsp;луну летал, сегодня в руки к&nbsp;нам попал.</p>
               <div class="catalog__user-like">
                 <button class="button-catalog__like" type="button">
                   <span class="visually-hidden">Лайк!</span>
@@ -111,7 +123,11 @@
           </li>
           <li class="catalog__item">
             <div class="catalog__photo">
-              <img class="catalog__image" src="img/photo-2-mobile.jpg" width="280" height="180" alt="Барабаны">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-2-tablet.jpg">
+                <img class="catalog__image" src="img/photo-2-mobile.jpg" width="280" height="180" alt="Барабаны">
+              </picture>
             </div>
             <div class="catalog__user">
               <p class="catalog__author">Борис<span class="catalog__date">(20 часов назад)</span></p>
@@ -129,11 +145,15 @@
           </li>
           <li class="catalog__item">
             <div class="catalog__photo">
-              <img class="catalog__image" src="img/photo-3-tablet.jpg" width="280" height="180" alt="Вид на небоскребы через стеклянную крышу">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-3-tablet.jpg">
+                <img class="catalog__image" src="img/photo-3-mobile.jpg" width="280" height="180" alt="Вид на небоскребы через стеклянную крышу">
+              </picture>
             </div>
             <div class="catalog__user">
               <p class="catalog__author">Антон<span class="catalog__date">(12 часов назад)</span></p>
-              <p class="catalog__message">Здесь могла быть ваша цитата о&nbsp;высоком и&nbsp;вечном.</p>
+              <p class="catalog__message">Здесь могла быть ваша цитата о высоком и&nbsp;вечном.</p>
               <div class="catalog__user-like">
                 <button class="button-catalog__like" type="button">
                   <span class="visually-hidden">Лайк!</span>
@@ -147,7 +167,11 @@
           </li>
           <li class="catalog__item">
             <div class="catalog__photo">
-              <img class="catalog__image" src="img/photo-4-tablet.jpg" width="280" height="180" alt="Ярмарка Кубанская бахча">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-4-tablet.jpg">
+                <img class="catalog__image" src="img/photo-4-mobile.jpg" width="280" height="180" alt="Ярмарка Кубанская бахча">
+              </picture>
             </div>
             <div class="catalog__user">
               <p class="catalog__author">Сергей<span class="catalog__date">(25 часов назад)</span></p>
@@ -165,7 +189,11 @@
           </li>
           <li class="catalog__item">
             <div class="catalog__photo">
-              <img class="catalog__image" src="img/photo-5-tablet.jpg" width="280" height="180" alt="Сидя на краю скалы">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-5-desktop.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-5-tablet.jpg">
+                <img class="catalog__image" src="img/photo-5-mobile.jpg" width="280" height="180" alt="Сидя на краю скалы">
+              </picture>
             </div>
             <div class="catalog__user">
               <p class="catalog__author">Максим<span class="catalog__date">(40 часов назад)</span></p>
@@ -183,7 +211,11 @@
           </li>
           <li class="catalog__item">
             <div class="catalog__photo">
-              <img class="catalog__image" src="img/photo-6-tablet.jpg" width="280" height="180" alt="Вид в илюминатор">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-6-desktop.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-6-tablet.jpg">
+                <img class="catalog__image" src="img/photo-6-mobile.jpg" width="280" height="180" alt="Вид в илюминатор">
+              </picture>
             </div>
             <div class="catalog__user">
               <p class="catalog__author">Надежда<span class="catalog__date">(45 часов назад)</span></p>
@@ -205,62 +237,64 @@
     <section class="upload">
       <div class="upload__description">
         <h2 class="visually-hidden">Редактирование и загрузка фотографий</h2>
-        <p class="upload__text">Затмите их&nbsp;всех! Выкладывайте все, что накопилось в&nbsp;телефоне!</p>
+        <p class="upload__text">Затмите их&nbsp;всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
       </div>
       <div class="upload__wrapper">
         <form class="upload__form" action="https://echo.htmlacademy.ru" method="post">
           <div class="upload__form-wrapper">
             <img class="upload__image" src="img/winter-road.jpg" width="280" height="374" alt="Заснеженная дорога">
-            <ul class="upload__filter filter">
-              <li class="filter__item">
-                <span class="visually-hidden">Кадрирование</span>
-                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z" fill="#D22856"/>
-                </svg>
-                <div class="range-controls__bar range-controls__bar--current">
-                  <button class="range-controls__toggle toggle" type="button">
-                    <span class="visually-hidden">Кнопка контроля</span>
-                  </button>
-                </div>
-              </li>
-              <li class="filter__item">
-                <span class="visually-hidden">Заливка</span>
-                <svg width="48" height="43" viewBox="0 0 48 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g opacity="0.3">
-                  <path d="M33.12 17.88L15.24 0L12.41 2.83L17.17 7.59L6.88 17.88C6.3182 18.4425 6.00264 19.205 6.00264 20C6.00264 20.795 6.3182 21.5575 6.88 22.12L17.88 33.12C18.4425 33.6818 19.205 33.9974 20 33.9974C20.795 33.9974 21.5575 33.6818 22.12 33.12L33.12 22.12C33.6818 21.5575 33.9974 20.795 33.9974 20C33.9974 19.205 33.6818 18.4425 33.12 17.88ZM10.41 20L20 10.42L29.59 20H10.41ZM38 23C38 23 34 27.33 34 30C34 31.0609 34.4214 32.0783 35.1716 32.8284C35.9217 33.5786 36.9391 34 38 34C39.0609 34 40.0783 33.5786 40.8284 32.8284C41.5786 32.0783 42 31.0609 42 30C42 27.33 38 23 38 23Z" fill="#283645"/>
-                  <path d="M48 40H0V43H48V40Z" fill="#283645"/>
-                  </g>
+            <div class="upload__container">
+              <ul class="upload__filter filter">
+                <li class="filter__item filter__item--crop filter__item--active">
+                  <span class="visually-hidden">Кадрирование</span>
+                  <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z" fill="currentColor"/>
                   </svg>
-                <div class="range-controls__bar">
-                  <button class="range-controls__toggle toggle" type="button">
-                    <span class="visually-hidden">Кнопка контроля</span>
-                  </button>
-                </div>
-              </li>
-              <li class="filter__item">
-                <span class="visually-hidden">Контраст</span>
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g opacity="0.3">
-                  <path d="M16 4C18.3734 4 20.6935 4.70379 22.6669 6.02236C24.6402 7.34094 26.1783 9.21509 27.0866 11.4078C27.9948 13.6005 28.2325 16.0133 27.7694 18.3411C27.3064 20.6689 26.1635 22.8071 24.4853 24.4853C22.8071 26.1635 20.6689 27.3064 18.3411 27.7694C16.0133 28.2324 13.6005 27.9948 11.4078 27.0866C9.21509 26.1783 7.34095 24.6402 6.02237 22.6668C4.70379 20.6935 4.00001 18.3734 4.00001 16C4.00001 12.8174 5.26429 9.76515 7.51473 7.51472C9.76516 5.26428 12.8174 4 16 4ZM16 0C12.8355 0 9.74207 0.938384 7.11088 2.69649C4.4797 4.45459 2.42894 6.95345 1.21793 9.87706C0.0069325 12.8007 -0.309921 16.0177 0.307443 19.1214C0.924806 22.2251 2.44866 25.0761 4.6863 27.3137C6.92394 29.5513 9.77487 31.0752 12.8786 31.6926C15.9823 32.3099 19.1993 31.9931 22.1229 30.7821C25.0466 29.5711 27.5454 27.5203 29.3035 24.8891C31.0616 22.2579 32 19.1645 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0Z" fill="#283645"/>
-                  <path d="M16 24.29C18.1536 24.1422 20.1708 23.1824 21.644 21.6046C23.1172 20.0268 23.9366 17.9486 23.9366 15.79C23.9366 13.6314 23.1172 11.5532 21.644 9.97538C20.1708 8.39759 18.1536 7.43782 16 7.29" fill="#283645"/>
-                  </g>
-                  </svg>
-                <div class="range-controls__bar">
-                  <button class="range-controls__toggle toggle" type="button">
-                    <span class="visually-hidden">Кнопка контроля</span>
-                  </button>
-                </div>
-              </li>
-              <!-- <li class="filter__item">
-                <div class="upload__buttons-container">
-                  <button class="button upload__buttons upload__buttons--post" type="submit">Запостить</button>
-                  <button class="button upload__buttons upload__buttons--cancel" type="reset">Отмена</button>
-                </div>
-              </li> -->
-            </ul>
-            <div class="upload__buttons-container">
-              <button class="button upload__buttons upload__buttons--post" type="submit">Запостить</button>
-              <button class="button upload__buttons upload__buttons--cancel" type="reset">Отмена</button>
+                  <div class="range-controls__bar range-controls__bar--current">
+                    <button class="range-controls__toggle toggle" type="button">
+                      <span class="visually-hidden">Кнопка контроля</span>
+                    </button>
+                  </div>
+                </li>
+                <li class="filter__item filter__item--colour">
+                  <span class="visually-hidden">Заливка</span>
+                  <svg width="48" height="43" viewBox="0 0 48 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.3">
+                    <path d="M33.12 17.88L15.24 0L12.41 2.83L17.17 7.59L6.88 17.88C6.3182 18.4425 6.00264 19.205 6.00264 20C6.00264 20.795 6.3182 21.5575 6.88 22.12L17.88 33.12C18.4425 33.6818 19.205 33.9974 20 33.9974C20.795 33.9974 21.5575 33.6818 22.12 33.12L33.12 22.12C33.6818 21.5575 33.9974 20.795 33.9974 20C33.9974 19.205 33.6818 18.4425 33.12 17.88ZM10.41 20L20 10.42L29.59 20H10.41ZM38 23C38 23 34 27.33 34 30C34 31.0609 34.4214 32.0783 35.1716 32.8284C35.9217 33.5786 36.9391 34 38 34C39.0609 34 40.0783 33.5786 40.8284 32.8284C41.5786 32.0783 42 31.0609 42 30C42 27.33 38 23 38 23Z" fill="currentColor"/>
+                    <path d="M48 40H0V43H48V40Z" fill="currentColor"/>
+                    </g>
+                    </svg>
+                  <div class="range-controls__bar">
+                    <button class="range-controls__toggle toggle" type="button">
+                      <span class="visually-hidden">Кнопка контроля</span>
+                    </button>
+                  </div>
+                </li>
+                <li class="filter__item filter__item--contrast">
+                  <span class="visually-hidden">Контраст</span>
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.3">
+                    <path d="M16 4C18.3734 4 20.6935 4.70379 22.6669 6.02236C24.6402 7.34094 26.1783 9.21509 27.0866 11.4078C27.9948 13.6005 28.2325 16.0133 27.7694 18.3411C27.3064 20.6689 26.1635 22.8071 24.4853 24.4853C22.8071 26.1635 20.6689 27.3064 18.3411 27.7694C16.0133 28.2324 13.6005 27.9948 11.4078 27.0866C9.21509 26.1783 7.34095 24.6402 6.02237 22.6668C4.70379 20.6935 4.00001 18.3734 4.00001 16C4.00001 12.8174 5.26429 9.76515 7.51473 7.51472C9.76516 5.26428 12.8174 4 16 4ZM16 0C12.8355 0 9.74207 0.938384 7.11088 2.69649C4.4797 4.45459 2.42894 6.95345 1.21793 9.87706C0.0069325 12.8007 -0.309921 16.0177 0.307443 19.1214C0.924806 22.2251 2.44866 25.0761 4.6863 27.3137C6.92394 29.5513 9.77487 31.0752 12.8786 31.6926C15.9823 32.3099 19.1993 31.9931 22.1229 30.7821C25.0466 29.5711 27.5454 27.5203 29.3035 24.8891C31.0616 22.2579 32 19.1645 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0Z" fill="currentColor"/>
+                    <path d="M16 24.29C18.1536 24.1422 20.1708 23.1824 21.644 21.6046C23.1172 20.0268 23.9366 17.9486 23.9366 15.79C23.9366 13.6314 23.1172 11.5532 21.644 9.97538C20.1708 8.39759 18.1536 7.43782 16 7.29" fill="currentColor"/>
+                    </g>
+                    </svg>
+                  <div class="range-controls__bar">
+                    <button class="range-controls__toggle toggle" type="button">
+                      <span class="visually-hidden">Кнопка контроля</span>
+                    </button>
+                  </div>
+                </li>
+                <!-- <li class="filter__item">
+                  <div class="upload__buttons-container">
+                    <button class="button upload__buttons upload__buttons--post" type="submit">Запостить</button>
+                    <button class="button upload__buttons upload__buttons--cancel" type="reset">Отмена</button>
+                  </div>
+                </li> -->
+              </ul>
+              <div class="upload__buttons-container">
+                <button class="button upload__buttons upload__buttons--post" type="submit">Запостить</button>
+                <button class="button upload__buttons upload__buttons--cancel" type="reset">Отмена</button>
+              </div>
             </div>
           </div>
         </form>

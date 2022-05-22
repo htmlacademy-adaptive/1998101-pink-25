@@ -10,7 +10,11 @@
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__logo" href="index.html">
-          <img src="img/logotype-mobile.svg" width="74" height="23" alt="Фотоприложение Pink">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logotype-tablet.svg">
+            <img class="main-header__logo-img" src="img/logotype-mobile.svg" width="74" height="23" alt="Фотоприложение Pink">
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -19,7 +23,7 @@
             <path d="M1.13659 0.00020839C0.986512 -0.00251551 0.837358 0.0214885 0.698091 0.0707781C0.558823 0.120068 0.432317 0.193625 0.326173 0.28703C0.22003 0.380436 0.136442 0.49176 0.0804303 0.614315C0.024419 0.73687 -0.00285856 0.868124 0.000236809 1.00019V3.00016C0.000236809 3.26537 0.119959 3.51972 0.333067 3.70725C0.546174 3.89478 0.83521 4.00014 1.13659 4.00014H48.8634C49.0135 4.00286 49.1626 3.97886 49.3019 3.92957C49.4412 3.88028 49.5677 3.80672 49.6738 3.71332C49.78 3.61991 49.8636 3.50859 49.9196 3.38603C49.9756 3.26348 50.0029 3.13222 49.9998 3.00016V1.00019C49.9998 0.734979 49.88 0.48063 49.6669 0.293097C49.4538 0.105563 49.1648 0.00020839 48.8634 0.00020839H1.13659ZM1.13659 10C0.986512 9.99731 0.837358 10.0213 0.698091 10.0706C0.558823 10.1199 0.432317 10.1935 0.326173 10.2869C0.22003 10.3803 0.136442 10.4916 0.0804303 10.6141C0.024419 10.7367 -0.00285856 10.868 0.000236809 11V13C0.000236809 13.2652 0.119959 13.5195 0.333067 13.7071C0.546174 13.8946 0.83521 14 1.13659 14H48.8634C49.0135 14.0027 49.1626 13.9787 49.3019 13.9294C49.4412 13.8801 49.5677 13.8065 49.6738 13.7131C49.78 13.6197 49.8636 13.5084 49.9196 13.3859C49.9756 13.2633 50.0029 13.132 49.9998 13V11C49.9998 10.7348 49.88 10.4805 49.6669 10.2929C49.4538 10.1054 49.1648 10 48.8634 10H1.13659ZM1.13659 19.9999C0.986512 19.9971 0.837358 20.0211 0.698091 20.0704C0.558823 20.1197 0.432317 20.1933 0.326173 20.2867C0.22003 20.3801 0.136442 20.4914 0.0804303 20.614C0.024419 20.7365 -0.00285856 20.8678 0.000236809 20.9998V22.9998C0.000236809 23.265 0.119959 23.5194 0.333067 23.7069C0.546174 23.8944 0.83521 23.9998 1.13659 23.9998H48.8634C49.0135 24.0025 49.1626 23.9785 49.3019 23.9292C49.4412 23.8799 49.5677 23.8064 49.6738 23.713C49.78 23.6196 49.8636 23.5082 49.9196 23.3857C49.9756 23.2631 50.0029 23.1319 49.9998 22.9998V20.9998C49.9998 20.7346 49.88 20.4803 49.6669 20.2927C49.4538 20.1052 49.1648 19.9999 48.8634 19.9999H1.13659Z" fill="currentColor"/>
           </svg>
         </button>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--active">
@@ -81,7 +85,7 @@
       <section class="advantages">
         <div class="advantages__titles">
           <p class="advantages__intro">Устали от серости мегаполиса?</p>
-          <p class="advantages__intro">Нам есть, что вам предложить!</p>
+          <p class="advantages__intro">Нам есть, что вам<br> предложить!</p>
         </div>
 
         <div class="advantages__content">
@@ -91,19 +95,19 @@
               <li class="advantages__item advantages__item--mood">
                 <div class="advantages__item-content">
                   <h3 class="advantages__title">Поднимает настроение</h3>
-                  <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и&nbsp;депрессию буквально в&nbsp;несколько кликов!</p>
+                  <p class="advantages__description">Приложение позволит вам победить<br> осеннюю хандру и депрессию буквально в несколько кликов!</p>
                 </div>
               </li>
               <li class="advantages__item advantages__item--world">
                 <div class="advantages__item-content">
                   <h3 class="advantages__title">Меняет мир вокруг</h3>
-                  <p class="advantages__description">Сделайте снимок и&nbsp;украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                  <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
                 </div>
               </li>
               <li class="advantages__item advantages__item--friends">
                 <div class="advantages__item-content">
                   <h3 class="advantages__title">Заводит новых друзей</h3>
-                  <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с&nbsp;друзьями и&nbsp;заводите новых</p>
+                  <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с&nbsp;друзьями и заводите новых</p>
                 </div>
               </li>
             </ul>
@@ -111,7 +115,7 @@
             <div class="advantages__effect">
               <div class="advantages__effect-content">
                 <h3 class="advantages__title advantages__title--effect">Эффект на&nbsp;24&nbsp;часа!</h3>
-                <p class="advantages__effect-description">Британские ученые провели исследования и&nbsp;доказали, что положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
+                <p class="advantages__effect-description">Британские ученые провели исследования и&nbsp;доказали,<br> что положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
                 <a class="advantages__link" href="#">Узнать больше об&nbsp;исследовании</a>
               </div>
             </div>
@@ -127,17 +131,19 @@
                 <p class="reviews__author-name">Николай Петров</p>
                 <p class="reviews__author-info">25&nbsp;лет, водитель трамвая</p>
                 <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть на привычные серые вещи! А&nbsp;еще я познакомился со&nbsp;своей будущей женой в комментариях к&nbsp;выложенной фотографии!&raquo;</p>
+
+                <button class="slider__button  slider__button--prev" type="button">
+                  <span class="visually-hidden">Предыдущий отзыв</span>
+                </button>
+
+                <button class="slider__button slider__button--next " type="button">
+                  <span class="visually-hidden">Следующий отзыв</span>
+                </button>
               </div>
             </blockquote>
           </div>
 
-          <button class="slider__prev" type="button">
-            <span class="visually-hidden">Предыдущий отзыв</span>
-          </button>
 
-          <button class="slider__next" type="button">
-            <span class="visually-hidden">Следующий отзыв</span>
-          </button>
 
           <div class="reviews__toggles toggles">
             <button class="toggles__item toggles__item--active" type="button" aria-label="Первый отзыв"></button>
@@ -146,76 +152,78 @@
           </div>
         </div>
       </section>
-      <!-- <section class="price">
+      <section class="price">
         <div class="price__wrapper">
           <h2 class="visually-hidden">Стоимость подписки</h2>
-          <table class="table price__table">
-            <thead>
-              <tr class="table__header-row">
-                <td class="table__header-cell"></td>
-                <td class="table__header-cell">База
-                  <span class="price__rate">1,99&nbsp;USD</span>
-                </td>
-                <td class="table__header-cell">Стандарт
-                  <span class="price__rate">3,99&nbsp;USD</span>
-                </td>
-                <td class="table__header-cell">Анлим
-                  <span class="price__rate">9,99&nbsp;USD</span>
-                </td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="table__row">
-                <td class="table__cell">
-                  <span class="table__option">Розовый фильтр</span>
-                </td>
-                <td class="table__cell table__cell--yes">
-                  <span class="visually-hidden">Да</span>
-                </td>
-                <td class="table__cell table__cell--yes">
-                  <span class="visually-hidden">Да</span>
-                </td>
-                <td class="table__cell table__cell--yes">
-                  <span class="visually-hidden">Да</span>
-                </td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__cell">
-                  <span class="table__option">Смайлики</span>
-                </td>
-                <td class="table__cell table__cell--no">
-                  <span class="visually-hidden">Нет</span>
-                </td>
-                <td class="table__cell table__cell--yes">
-                  <span class="visually-hidden">Да</span>
-                </td>
-                <td class="table__cell table__cell--yes">
-                  <span class="visually-hidden">Да</span>
-                </td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__cell">
-                  <span class="table__option">Комментарии</span>
-                </td>
-                <td class="table__cell table__cell--no">
-                  <span class="visually-hidden">Нет</span>
-                </td>
-                <td class="table__cell table__cell--no">
-                  <span class="visually-hidden">Нет</span>
-                </td>
-                <td class="table__cell table__cell--yes">
-                  <span class="visually-hidden">Да</span>
-                </td>
-              </tr>
-            </tbody>
-            </table>
+          <div class="price__table-wrapper">
+            <table class="table price__table">
+              <thead>
+                <tr class="table__header-row">
+                  <td class="table__header-cell"></td>
+                  <td class="table__header-cell">База
+                    <span class="price__rate">1,99&nbsp;USD</span>
+                  </td>
+                  <td class="table__header-cell table__cell--central">Стандарт
+                    <span class="price__rate">3,99&nbsp;USD</span>
+                  </td>
+                  <td class="table__header-cell">Анлим
+                    <span class="price__rate">9,99&nbsp;USD</span>
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table__row">
+                  <td class="table__cell">
+                    <span class="table__option">Розовый фильтр</span>
+                  </td>
+                  <td class="table__cell table__cell--yes table__cell--left">
+                    <span>Розовый фильтр</span>
+                  </td>
+                  <td class="table__cell table__cell--yes table__cell--central">
+                    <span>Смайлики</span>
+                  </td>
+                  <td class="table__cell table__cell--yes">
+                    <span>Комментарии</span>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell">
+                    <span class="table__option">Смайлики</span>
+                  </td>
+                  <td class="table__cell table__cell--no table__cell--left">
+                    <span>Розовый фильтр</span>
+                  </td>
+                  <td class="table__cell table__cell--yes table__cell--central">
+                    <span>Смайлики</span>
+                  </td>
+                  <td class="table__cell table__cell--yes">
+                    <span>Комментарии</span>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell">
+                    <span class="table__option">Комментарии</span>
+                  </td>
+                  <td class="table__cell table__cell--no table__cell--left">
+                    <span>Розовый фильтр</span>
+                  </td>
+                  <td class="table__cell table__cell--no table__cell--central">
+                    <span>Смайлики</span>
+                  </td>
+                  <td class="table__cell table__cell--yes">
+                    <span>Комментарии</span>
+                  </td>
+                </tr>
+              </tbody>
+              </table>
+            </div>
             <div class="reviews__toggles toggles">
               <button class="toggles__item toggles__item--active" type="button"></button>
               <button class="toggles__item" type="button"></button>
               <button class="toggles__item" type="button"></button>
             </div>
         </div>
-      </section> -->
+      </section>
       <section class="contacts">
         <div class="contacts__wrapper">
           <h2 class="visually-hidden">Обратная связь</h2>
@@ -278,8 +286,8 @@
             <b class="copyright__text">Разработано</b>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <span class="visually-hidden">HTML Academy</span>
-              <svg width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
-                <path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+              <svg width="37" height="42" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+                <path fill="#d22856" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
               </svg>
             </a>
           </div>

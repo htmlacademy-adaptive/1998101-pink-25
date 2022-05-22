@@ -1,29 +1,135 @@
+.table {
+  width: calc(300% - 120px);
+  table-layout: fixed;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 33px;
+  line-height: 30px;
+  transform: translateX(-256px);
+
+  @include tablet() {
+    /* width: calc(100% - 44px);
+    margin-right: 22px;
+    margin-left: 22px; */
+    width: 100%;
+    transform: none;
+  }
+}
+
 .table__header-cell {
-  font-size: 16px;
+  width: calc(100vw - 40px);
+  padding: 12px 60px 29px;
   font-weight: 700;
+  font-size: 16px;
+
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
   color: $white;
   background-color: #283645;
-}
 
-.price__rate {
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 30px;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  color: $white;
+  &:first-child {
+    display: none;
+
+    @include tablet() {
+      opacity: 0;
+      display: table-cell;
+    }
+  }
+
+  @include tablet() {
+    width: 25%;
+    padding: 12px 36px 10px;
+  }
+
+  @include desktop() {
+    font-size: 18px;
+    padding: 15px 44px 21px;
+  }
 }
 
 .table__option {
   font-size: 14px;
   line-height: 30px;
   color: #283645;
+  /* text-transform: uppercase; */
+
+  @include desktop() {
+    font-size: 18px;
+  }
 }
 
 .table__cell {
-  padding: 20px;
+  background-color: #ffffff;
+  position: relative;
+  width: calc(100vw - 162px);
+  padding: 13px 20px 16px;
+  padding-right: 64px;
+  font-weight: 400;
+  text-align: left;
+  border-bottom: 2px solid #e5e5e5;
+
+  &:first-child {
+    display: none;
+
+    @include tablet() {
+      display: table-cell;
+    }
+  }
+
+  &:not(:first-child) {
+    span {
+      @include tablet() {
+        display: none;
+      }
+    }
+  }
+
+  @include tablet() {
+    width: 25%;
+    padding: 7px 15px 8px;
+  }
+
+  @include desktop() {
+    padding: 15px 21px 11px;
+  }
+
+  /* span {
+    text-transform: uppercase;
+  } */
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: 17px;
+    width: 31px;
+    height: 27px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+
+    @include tablet() {
+      top: 50%;
+      left: 50%;
+      transform: translate(-15px, -13px);
+    }
+  }
+
+  &--no::after {
+    background-image: url("../../img/icons/icone-no.svg");
+  }
+
+  &--yes::after {
+    background-image: url("../../img/icons/icone-yes.svg");
+  }
+}
+
+.table__cell--central {
+  border-left: 2px solid #e2e2e2;
+  border-right: 2px solid #e2e2e2;
+}
+
+.table__cell--left {
+  border-left: 2px solid #e2e2e2;
 }

@@ -1,0 +1,28 @@
+.slider__button {
+  display: none;
+
+  @include desktop() {
+    display: block;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    border: none;
+    width: 22px;
+    height: 41px;
+    position: absolute;
+    transform: translateY(380%);
+  }
+
+  &--prev {
+    background-image: url("../../img/icons/icone-left-arrow.svg");
+    transform: translateY(-50%);
+    top: 49%;
+    left: -1px;
+  }
+
+  &--next {
+    background-image: url("../../img/icons/icone-right-arrow.svg");
+    transform: translateY(-50%);
+    top: 49%;
+    right: -1px;
+  }
+}

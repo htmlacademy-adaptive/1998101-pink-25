@@ -1,0 +1,26 @@
+.filter__item {
+  &--active svg {
+    color: #d22856;
+  }
+
+  @include tablet() {
+    svg {
+      color: #d22856;
+      width: 22px;
+      height: 22px;
+      margin-right: 29px;
+    }
+
+    svg g {
+      opacity: 1;
+    }
+  }
+
+  @include desktop() {
+    svg {
+      width: 10%;
+      height: 10%;
+      margin-right: 47px;
+    }
+  }
+}

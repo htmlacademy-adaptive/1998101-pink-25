@@ -2,6 +2,10 @@
   box-sizing: content-box;
   display: flex;
   justify-content: center;
+
+  @include tablet() {
+    display: none;
+  }
 }
 
 .toggles__item {
@@ -14,6 +18,10 @@
   transition: background-color $transition, border-color $transition;
 
   cursor: pointer;
+
+  &:not(:last-child) {
+    margin-right: 13px;
+  }
 
   &:hover {
     background-color: rgba(#283645, 0.75);
