@@ -19,6 +19,10 @@
     padding-bottom: 44px;
     margin-top: -114px;
     margin-bottom: 44px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/background-hand-tablet@x2.png");
+    }
   }
 
   @include desktop() {
@@ -27,6 +31,10 @@
     background-size: cover;
     padding-bottom: 51px;
     margin-top: -110px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/background-hand-desktop@x2.png");
+    }
   }
 }
 
