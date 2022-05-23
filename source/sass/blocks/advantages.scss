@@ -129,6 +129,11 @@
     /* margin-top: 43px; */
     z-index: 3;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/phone-screen-smile@2x.png");
+      /* background-size: 1320px auto; */
+    }
+
     @include tablet() {
       grid-column: 1/2;
       grid-row: 1/-1;
@@ -137,6 +142,11 @@
       background-size: cover;
       width: 100%;
       height: 547px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/phone-screen-smile-tablet@2x.png");
+        /* background-size: 536px auto; */
+      }
     }
 
     @include desktop() {
@@ -344,14 +354,26 @@
 
     &--mood::before {
       background-image: url("../../img/phone-screen-1.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/phone-screen-1@2x.png");
+      }
     }
 
     &--world::before {
       background-image: url("../../img/phone-screen-2.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/phone-screen-2@2x.png");
+      }
     }
 
     &--friends::before {
       background-image: url("../../img/phone-screen-3.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/phone-screen-3@2x.png");
+      }
     }
   }
 }
