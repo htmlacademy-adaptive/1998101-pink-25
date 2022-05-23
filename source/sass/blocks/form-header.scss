@@ -20,9 +20,14 @@
       background-image: url("../../img/background-tablet@2x.png");
     }
   }
-  @include tablet() {
+
+  @include desktop() {
     background-image: url("../../img/background-desktop.png");
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/background-desktop@2x.png");
+    }
   }
 }
 
