@@ -24,12 +24,19 @@
   }
 }
 
+.main-header--showed {
+  .main-header__wrapper {
+    background-color: #283645;
+    box-shadow: 0 1px 0 #000000;
+  }
+}
+
 .main-header__logo-img {
   @include tablet() {
     width: 145px;
   }
 
   @include desktop() {
-    width: 147px;
+    width: 171px;
   }
 }

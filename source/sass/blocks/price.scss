@@ -7,21 +7,23 @@
   @include wrapper;
   padding-left: 0;
   padding-right: 0;
+  padding-bottom: 46px;
 
   @include tablet() {
     padding-top: 58px;
-    padding-bottom: 34px;
+    padding-bottom: 26px;
   }
 
   @include desktop() {
     padding-top: 91px;
-    padding-bottom: 66px;
+    padding-bottom: 61px;
   }
 }
 
 .price__table-wrapper {
   position: relative;
   overflow: hidden;
+  padding-bottom: 7px;
 }
 
 .price__rate {

@@ -10,10 +10,12 @@
 
 .reviews__wrapper {
   @include wrapper;
+  padding-bottom: 94px;
 
-  @media (min-width: $md) {
-    @include tablet;
+  @include tablet() {
+    padding: 0;
   }
+
 
   @include desktop() {
     padding-top: 72px;
@@ -22,7 +24,7 @@
 
 .reviews__list {
   @include desktop() {
-    background-image: url(../../img/icons/icone-quotes.svg);
+    background-image: url("../img/icon-quotes.svg");
     background-repeat: no-repeat;
     background-position: top center;
   }
@@ -52,10 +54,11 @@
   text-align: center;
   color: #283645;
   margin: 0;
-  padding-bottom: 12px;
+  padding-bottom: 30px;
 
   @include tablet() {
     font-size: 18px;
+    padding-bottom: 12px;
     order: 1;
   }
 
@@ -65,8 +68,8 @@
     padding: 0;
     margin-top: 114px;
     margin-bottom: 36px;
-    padding-left: 106px;
-    padding-right: 106px;
+    padding-left: 210px;
+    padding-right: 210px;
   }
 }
 
@@ -76,7 +79,7 @@
   line-height: 30px;
   text-align: center;
   margin: 0;
-  padding-top: 40px;
+  padding-top: 41px;
   padding-bottom: 14px;
 
   @include tablet() {
@@ -97,7 +100,7 @@
 .reviews__author-info {
   display: none;
 
-  @media (min-width: $md) {
+  @include tablet() {
     display: block;
     font-size: 14px;
     text-align: center;
@@ -107,7 +110,7 @@
     padding-bottom: 35px;
   }
 
-  @media (min-width: $lg) {
+  @include desktop() {
     font-size: 18px;
     order: 3;
     margin: 0;

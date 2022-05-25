@@ -1,0 +1,33 @@
+.form-emotions__wrapper {
+  @include wrapper;
+  padding-top: 42px;
+  padding-bottom: 52px;
+}
+
+.form-emotions {
+  padding: 0;
+  margin-top: 37px;
+
+  @include tablet() {
+    margin-top: 9px;
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+
+  @include desktop() {
+    padding-top: 0;
+    padding-bottom: 39px;
+  }
+}
+
+.form-emotions__legend {
+  margin-bottom: 17px;
+
+  @include tablet() {
+    margin-bottom: 30px;
+  }
+
+  @include desktop() {
+    margin-bottom: 28px;
+  }
+}

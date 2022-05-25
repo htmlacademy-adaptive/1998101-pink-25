@@ -1,0 +1,13 @@
+.form-legend {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #d22856;
+  text-transform: uppercase;
+
+  @include tablet() {
+    line-height: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
