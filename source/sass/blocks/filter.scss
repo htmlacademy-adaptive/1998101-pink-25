@@ -1,4 +1,7 @@
 .filter__item {
+  display: flex;
+  align-items: center;
+
   &--active svg {
     color: #d22856;
   }
@@ -21,6 +24,30 @@
       width: 10%;
       height: 10%;
       margin-right: 47px;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-right: 35px;
+
+    @include tablet() {
+      margin-right: 0;
+    }
+  }
+
+  @include tablet() {
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+  }
+
+  @include desktop() {
+    padding-bottom: 10px;
+    padding-top: 13px;
+
+    &:first-child {
+      padding-top: 0;
     }
   }
 }

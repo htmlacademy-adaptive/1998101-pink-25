@@ -1,0 +1,40 @@
+.form-name {
+  border: 0 none;
+  padding: 0;
+  margin-top: 20px;
+
+  @include desktop() {
+    margin-top: 21px;
+  }
+}
+
+.form-name__wrapper {
+  @include wrapper;
+  margin-bottom: 15px;
+  padding-left: 22px;
+  padding-right: 22px;
+
+  @media (min-width: $md) {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+}
+
+.form-name__list {
+  @include list-reset;
+}
+
+.form-name__item {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet() {
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 56px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

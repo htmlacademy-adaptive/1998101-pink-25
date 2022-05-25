@@ -8,9 +8,6 @@
   transform: translateX(-256px);
 
   @include tablet() {
-    /* width: calc(100% - 44px);
-    margin-right: 22px;
-    margin-left: 22px; */
     width: 100%;
     transform: none;
   }
@@ -18,7 +15,7 @@
 
 .table__header-cell {
   width: calc(100vw - 40px);
-  padding: 12px 60px 29px;
+  padding: 12px 60px 25px;
   font-weight: 700;
   font-size: 16px;
 
@@ -52,7 +49,6 @@
   font-size: 14px;
   line-height: 30px;
   color: #283645;
-  /* text-transform: uppercase; */
 
   @include desktop() {
     font-size: 18px;
@@ -68,6 +64,7 @@
   font-weight: 400;
   text-align: left;
   border-bottom: 2px solid #e5e5e5;
+  text-transform: uppercase;
 
   &:first-child {
     display: none;
@@ -77,26 +74,19 @@
     }
   }
 
-  &:not(:first-child) {
-    span {
-      @include tablet() {
-        display: none;
-      }
-    }
-  }
-
   @include tablet() {
     width: 25%;
     padding: 7px 15px 8px;
+    text-transform: none;
+
+    &:not(:first-child) span {
+      display: none;
+    }
   }
 
   @include desktop() {
     padding: 15px 21px 11px;
   }
-
-  /* span {
-    text-transform: uppercase;
-  } */
 
   &::after {
     content: "";
@@ -117,11 +107,11 @@
   }
 
   &--no::after {
-    background-image: url("../../img/icons/icone-no.svg");
+    background-image: url("../img/icon-no.svg");
   }
 
   &--yes::after {
-    background-image: url("../../img/icons/icone-yes.svg");
+    background-image: url("../img/icon-yes.svg");
   }
 }
 

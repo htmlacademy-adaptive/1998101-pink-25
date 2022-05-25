@@ -22,10 +22,6 @@
     order: 1;
     margin-bottom: 0;
   }
-
-  @include desktop() {
-
-  }
 }
 
 .form__platform {
@@ -115,37 +111,6 @@
   }
 }
 
-.form-name__wrapper {
-  @include wrapper;
-  margin-bottom: 15px;
-  padding-left: 22px;
-  padding-right: 22px;
-
-  @media (min-width: $md) {
-    padding-left: 22px;
-    padding-right: 22px;
-  }
-}
-
-.form-name__list {
-  @include list-reset;
-}
-
-.form-name__item {
-  display: flex;
-  flex-direction: column;
-
-  @include tablet() {
-    flex-direction: row;
-    align-items: baseline;
-    margin-bottom: 56px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-}
-
 .form__fieldset {
   border: 0 none;
   padding: 0;
@@ -154,16 +119,6 @@
   @include tablet() {
     border: 2px solid #e5e5e5;
     padding: 5px 60px 53px 58px;
-  }
-}
-
-.form-name {
-  border: 0 none;
-  padding: 0;
-  margin-top: 20px;
-
-  @include desktop() {
-    margin-top: 21px;
   }
 }
 
@@ -203,7 +158,7 @@
 }
 
 .form__checkbox:checked + label::before {
-  background-image: url("../img/icons/icone-tick.svg");
+  background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -244,9 +199,6 @@
   height: 14px;
   border-radius: 50%;
   background-color: #d22856;
-  // background-image: url("../img/icons/icone-tick.svg");
-  // background-repeat: no-repeat;
-  // background-position: center;
 }
 
 .form__lable--name {
@@ -260,163 +212,11 @@
   }
 }
 
-.form-legend {
-  font-size: 14px;
-  line-height: 18px;
-  text-align: center;
-  color: #d22856;
-  text-transform: uppercase;
-
-  @include tablet() {
-    line-height: 30px;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-}
-
-
-.form-achievements__wrapper {
-  @include wrapper;
-  background-color: #f2f2f2;
-  padding-top: 42px;
-  padding-bottom: 44px;
-
-  @media (min-width: $md) {
-    background-color: #ffffff;
-  }
-}
-
-.form-achievements {
-  @include desktop() {
-    padding: 0;
-  }
-}
-
-.form-achievements__list {
-  @include list-reset;
-
-/*   @include tablet() {
-
-  } */
-
-  @include desktop() {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-left: 57px;
-    margin-bottom: 10px;
-  }
-}
-
-.form-achievements__legend {
-  margin-bottom: 40px;
-  padding-left: 13px;
-  padding-right: 34px;
-
-  @include tablet() {
-    margin-bottom: 33px;
-    padding-left: 31px;
-    padding-right: 31px;
-  }
-
-  @include desktop() {
-    margin-bottom: 39px;
-  }
-}
-
-.form-achievements__item {
-  @include desktop() {
-    &--shark {
-      order: 1;
-    }
-
-    &--beach {
-      order: 4;
-    }
-
-    &--noris {
-      order: 2;
-    }
-
-    &--suvenirs {
-      order: 5;
-    }
-
-    &--tower {
-      order: 3;
-    }
-
-    &--hotel {
-      order: 6;
-    }
-  }
-}
-
-.form-achievements__item:not(:last-child) {
-  margin-bottom: 47px;
-
-  @include desktop() {
-    margin-bottom: 0;
-  }
-}
-
 .form__checkbox-text {
   font-size: 18px;
   line-height: 30px;
   text-align: left;
   color: #283645;
-}
-
-.form-contacts__wrapper {
-  @include wrapper;
-  padding-top: 42px;
-  padding-bottom: 15px;
-}
-
-.form-contacts {
-  padding: 0;
-  padding-top: 32px;
-
-  @include tablet() {
-    padding-left: 56px;
-    padding-right: 60px;
-  }
-
-  @include desktop() {
-    padding-left: 60px;
-    padding-top: 29px;
-    padding-bottom: 0;
-  }
-}
-
-.form-contacts__list {
-  @include list-reset;
-
-  display: grid;
-  grid-template-rows: auto auto;
-  gap: 2px;
-
-  @include desktop() {
-    /* display: flex;
-    flex-direction: row; */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 74px;
-    /* row-gap: 22px; */
-  }
-}
-
-.form-contacts__item {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.form-contacts__legend {
-  display: none;
-
-  @include tablet() {
-    display: block;
-  }
 }
 
 .form__lable--contacts {
@@ -461,90 +261,6 @@
   }
 }
 
-.form-platform {
-  @include desktop() {
-    padding: 0;
-    padding-top: 38px;
-    padding-bottom: 57px;
-  }
-}
-
-.form-platform__wrapper {
-  @include wrapper;
-  background-color: #f2f2f2;
-  padding-top: 42px;
-  padding-bottom: 42px;
-
-  @media (min-width: $md) {
-    background-color: #ffffff;
-  }
-}
-
-
-.form-platform__list {
-  @include list-reset;
-
-  @include desktop() {
-    padding-left: 69px;
-  }
-}
-
-.form-platform__item:not(:last-child) {
-  margin-bottom: 38px;
-
-  @include desktop() {
-    margin-bottom: 39px;
-  }
-}
-
-.form-platform__legend {
-  margin-bottom: 34px;
-  padding-left: 10px;
-  padding-right: 30px;
-
-  @include tablet() {
-    padding-left: 30px;
-  }
-
-  @include desktop() {
-    margin: 0;
-  }
-}
-
-.form-emotions__wrapper {
-  @include wrapper;
-  padding-top: 42px;
-  padding-bottom: 52px;
-}
-
-.form-emotions {
-  padding: 0;
-  margin-top: 37px;
-
-  @include tablet() {
-    margin-top: 9px;
-    padding-left: 56px;
-    padding-right: 56px;
-  }
-
-  @include desktop() {
-    padding-top: 0;
-    padding-bottom: 39px;
-  }
-}
-
-.form-emotions__legend {
-  margin-bottom: 17px;
-
-  @include tablet() {
-    margin-bottom: 30px;
-  }
-
-  @include desktop() {
-    margin-bottom: 28px;
-  }
-}
-
 .form__send-button {
   width: 100%;
   min-height: 63px;
@@ -554,7 +270,7 @@
   border-radius: 1px;
   margin-bottom: 29px;
 
-  @media (min-width: $md) {
+  @include tablet() {
     width: 48%;
   }
 
@@ -610,7 +326,7 @@
 
 .form__text-field {
   min-width: 100%;
-  height: 193px;
+  height: 199px;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
   font-size: 18px;
@@ -621,8 +337,9 @@
   margin-bottom: 48px;
   font-family: inherit;
 
-  @media (min-width: $md) {
+  @include tablet() {
     margin-top: 0;
+    height: 192px;
   }
 
   @include desktop() {

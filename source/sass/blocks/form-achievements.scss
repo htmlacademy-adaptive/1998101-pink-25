@@ -1,0 +1,79 @@
+.form-achievements__wrapper {
+  @include wrapper;
+  background-color: #f2f2f2;
+  padding-top: 42px;
+  padding-bottom: 44px;
+
+  @media (min-width: $md) {
+    background-color: #ffffff;
+  }
+}
+
+.form-achievements {
+  @include desktop() {
+    padding: 0;
+  }
+}
+
+.form-achievements__list {
+  @include list-reset;
+
+  @include desktop() {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 57px;
+    margin-bottom: 10px;
+  }
+}
+
+.form-achievements__legend {
+  margin-bottom: 40px;
+  padding-left: 13px;
+  padding-right: 34px;
+
+  @include tablet() {
+    margin-bottom: 33px;
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+
+  @include desktop() {
+    margin-bottom: 39px;
+  }
+}
+
+.form-achievements__item {
+  @include desktop() {
+    &--shark {
+      order: 1;
+    }
+
+    &--beach {
+      order: 4;
+    }
+
+    &--noris {
+      order: 2;
+    }
+
+    &--suvenirs {
+      order: 5;
+    }
+
+    &--tower {
+      order: 3;
+    }
+
+    &--hotel {
+      order: 6;
+    }
+  }
+}
+
+.form-achievements__item:not(:last-child) {
+  margin-bottom: 47px;
+
+  @include desktop() {
+    margin-bottom: 0;
+  }
+}

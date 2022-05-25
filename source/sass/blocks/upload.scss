@@ -8,7 +8,6 @@
   text-align: center;
   color: #283645;
   margin: 0;
-  /* margin-top: 39px; */
   margin-bottom: 41px;
 
   @include tablet() {
@@ -78,35 +77,6 @@
   @include desktop() {
     margin-top: 0;
     margin-bottom: 153px;
-  }
-}
-
-.filter__item {
-  display: flex;
-  align-items: center;
-
-  &:not(:last-child) {
-    margin-right: 35px;
-
-    @include tablet() {
-      margin-right: 0;
-    }
-  }
-
-  @include tablet() {
-    width: 100%;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid rgba(40, 54, 69, 0.1);
-  }
-
-  @include desktop() {
-    padding-bottom: 10px;
-    padding-top: 13px;
-
-    &:first-child {
-      padding-top: 0;
-    }
   }
 }
 

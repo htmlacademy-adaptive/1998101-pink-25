@@ -1,0 +1,16 @@
+.button-catalog__like {
+  margin: 0;
+  padding: 0;
+  margin-right: 15px;
+  border: none;
+}
+
+.button-catalog__like-text {
+  font-size: 12px;
+  line-height: 24px;
+  color: #d22856;
+
+  @include tablet() {
+    margin-right: 16px;
+  }
+}
