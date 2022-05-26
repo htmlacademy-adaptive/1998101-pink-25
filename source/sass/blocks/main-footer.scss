@@ -11,8 +11,7 @@
     align-items: flex-start;
   }
 
-  @media (min-width: $lg) {
-    @include desktop;
+  @include desktop() {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

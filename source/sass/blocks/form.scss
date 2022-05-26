@@ -10,7 +10,6 @@
   @include desktop() {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(5, auto);
-    /* row-gap: 50px; */
     column-gap: 74px;
   }
 }
@@ -122,19 +121,23 @@
   }
 }
 
-.form__lable {
+.form__label {
   font-size: 14px;
   line-height: 30px;
   text-align: left;
   color: #d22856;
   margin-bottom: 17px;
 
+  &--platform {
+    color: #283645;
+  }
+
   @include tablet() {
     margin-bottom: 0;
   }
 }
 
-.form__lable-checkbox {
+.form__label-checkbox {
   position: relative;
   display: grid;
   grid-template-columns: 35px 1fr;
@@ -143,7 +146,6 @@
 
   &::before {
     content: "";
-
     display: block;
     width: 35px;
     height: 35px;
@@ -191,7 +193,6 @@
 
 .form__radio:checked + label::after {
   content: "";
-
   position: absolute;
   left: 12px;
   display: block;
@@ -201,7 +202,7 @@
   background-color: #d22856;
 }
 
-.form__lable--name {
+.form__label--name {
   padding-left: 23px;
   margin-bottom: 7px;
   text-transform: uppercase;
@@ -219,7 +220,7 @@
   color: #283645;
 }
 
-.form__lable--contacts {
+.form__label--contacts {
   padding-left: 23px;
   margin-bottom: 7px;
   text-transform: uppercase;
@@ -256,7 +257,6 @@
     display: block;
     background-color: #f2f2f2;
     border-radius: 1px;
-    /* border: 2px solid #e5e5e5; */
     padding: 20px 20px 16px 20px;
   }
 }
@@ -336,6 +336,7 @@
   padding: 13px 0 22px 20px;
   margin-bottom: 48px;
   font-family: inherit;
+  resize: none;
 
   @include tablet() {
     margin-top: 0;

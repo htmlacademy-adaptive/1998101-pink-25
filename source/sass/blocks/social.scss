@@ -30,7 +30,7 @@
   }
 }
 
-@media (min-width: $md) {
+@include tablet() {
   .social__list {
     margin-bottom: 0;
   }

@@ -37,36 +37,6 @@
   display: none;
 }
 
-.main-header--showed {
-  .main-nav__toggle-burger {
-    display: none;
-  }
-
-  .main-nav__toggle-cross {
-    display: block;
-  }
-
-  .main-nav {
-    top: 100%;
-    visibility: visible;
-  }
-
-  svg {
-    display: none;
-  }
-}
-
-.main-header--no-js {
-  .main-nav {
-    top: 100%;
-    visibility: visible;
-  }
-
-  .main-nav__toggle {
-    display: none;
-  }
-}
-
 .main-nav__list {
   margin: 0;
   padding: 0;
