@@ -51,3 +51,27 @@
     }
   }
 }
+
+.filter__item:first-of-type {
+  .range-controls__bar {
+    position: absolute;
+    display: block;
+    bottom: -41px;
+    margin-bottom: 0;
+    width: calc(100% - 40px);
+    left: 0;
+    right: 0;
+
+    @include tablet() {
+      position: relative;
+      width: 74%;
+      left: unset;
+      right: unset;
+      bottom: unset;
+    }
+
+    @include desktop() {
+      width: 63%;
+    }
+  }
+}

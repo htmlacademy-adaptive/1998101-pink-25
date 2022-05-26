@@ -10,7 +10,7 @@
     margin-bottom: 3px;
   }
 
-  @media (min-width: $lg) {
+  @include desktop() {
     margin-bottom: 20px;
   }
 }

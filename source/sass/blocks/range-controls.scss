@@ -1,5 +1,11 @@
 .range-controls__bar {
   display: none;
+  position: relative;
+  height: 2px;
+  background-color: #283645;
+  width: 240px;
+  margin: 0 auto;
+  margin-bottom: 34px;
 
   @include tablet() {
     display: block;
@@ -12,26 +18,19 @@
   }
 }
 
-.filter__item:first-of-type {
-  .range-controls__bar {
-    position: absolute;
-    display: block;
-    bottom: -41px;
-    margin-bottom: 0;
-    width: calc(100% - 40px);
-    left: 0;
-    right: 0;
+.range-controls__toggle {
+  position: absolute;
+  top: -6px;
+  left: 193px;
+  width: 14px;
+  height: 14px;
+  background-color: #ffffff;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid #d22856;
+  cursor: pointer;
 
-    @include tablet() {
-      position: relative;
-      width: 74%;
-      left: unset;
-      right: unset;
-      bottom: unset;
-    }
-
-    @include desktop() {
-      width: 63%;
-    }
+  @include tablet() {
+    left: 164px;
   }
 }
