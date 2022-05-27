@@ -357,14 +357,20 @@
   margin: 0;
   margin-bottom: 56px;
 
-  &--none {
+  /* &--none {
     display: none;
-  }
+  } */
 
   @include desktop() {
     &--none {
       display: inline-block;
     }
+  }
+}
+
+.form__send-required-fields-none {
+  @media (max-width: $lg - 1px) {
+    display: none;
   }
 }
 

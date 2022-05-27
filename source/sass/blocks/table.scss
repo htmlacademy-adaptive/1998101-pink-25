@@ -114,7 +114,8 @@
   }
 }
 
-.table__cell--central {
+.table__cell--central,
+.table__header-cell--central {
   border-left: 2px solid #e2e2e2;
   border-right: 2px solid #e2e2e2;
 }

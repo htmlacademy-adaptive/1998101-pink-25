@@ -3,7 +3,7 @@
 const header = document.querySelector('header');
 header.classList.remove('main-header--no-js');
 
-const navButton = header.querySelector('.main-nav__toggle');
+const navButton = header.querySelector('.main-header__toggle');
 let isOpened = false;
 
 const showMenu = () => {

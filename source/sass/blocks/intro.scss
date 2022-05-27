@@ -1,17 +1,35 @@
 .intro {
-  @include desktop() {
-    margin-bottom: 62px;
-  }
-}
-
-.intro__wrapper {
-  @include wrapper;
   background-color: #1d2631;
 
   @include tablet() {
     background-image: url("../../img/background-hand-tablet.png");
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/background-hand-tablet@x2.png");
+    }
+  }
+
+
+  @include desktop() {
+    margin-bottom: 62px;
+    background-position: 0;
+    background-image: url("../../img/background-hand-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/background-hand-desktop@x2.png");
+    }
+  }
+}
+
+.intro__wrapper {
+  @include wrapper;
+  background-color: transparent;
+
+  @include tablet() {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -19,22 +37,13 @@
     padding-bottom: 44px;
     margin-top: -114px;
     margin-bottom: 44px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/background-hand-tablet@x2.png");
-    }
-  }
+}
 
   @include desktop() {
-    background-image: url("../../img/background-hand-desktop.png");
-    background-repeat: no-repeat;
-    background-size: cover;
     padding-bottom: 55px;
     margin-top: -110px;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/background-hand-desktop@x2.png");
-    }
+
   }
 }
 
