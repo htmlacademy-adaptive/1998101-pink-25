@@ -357,10 +357,6 @@
   margin: 0;
   margin-bottom: 56px;
 
-  /* &--none {
-    display: none;
-  } */
-
   @include desktop() {
     &--none {
       display: inline-block;
