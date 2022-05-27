@@ -1,0 +1,36 @@
+.form-container__wrapper {
+  @include wrapper;
+}
+
+.form-container__description {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 35px;
+
+  @include tablet() {
+    font-size: 18px;
+    margin-bottom: 55px;
+    margin-left: 65px;
+    margin-right: 65px;
+  }
+
+  @include desktop() {
+    margin-left: 92px;
+    margin-right: 92px;
+    margin-bottom: 66px;
+  }
+}
+
+.form-container__form-add {
+  display: none;
+
+  @include tablet() {
+    display: block;
+  }
+
+  @include desktop() {
+    display: inline;
+  }
+}
