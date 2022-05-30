@@ -157,6 +157,14 @@
   @include desktop() {
     margin-bottom: 47px;
   }
+
+  &:hover::before {
+    border-color: #283645;
+  }
+
+  &:active::before {
+    border-color: #d22856;
+  }
 }
 
 .form__checkbox:checked + label::before {
@@ -184,6 +192,14 @@
 
   @include tablet() {
     gap: 24px;
+  }
+
+  &:hover::before {
+    border-color: #283645;
+  }
+
+  &:active::before {
+    border-color: #d22856;
   }
 }
 
